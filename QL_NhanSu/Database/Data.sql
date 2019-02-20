@@ -1,6 +1,11 @@
-﻿CREATE DATABASE TT_QLNV
+﻿-- CREATE DATABASE
+CREATE DATABASE TT_QLNV
+GO
+-- USE Database
 USE TT_QLNV
 GO
+
+--------------------------------------------------------- Create Table ------------------------------------------------------
 CREATE TABLE PHONGBAN(
 	MAPB INT IDENTITY(1,1) NOT NULL,
 	TENPB NVARCHAR(50),
@@ -64,6 +69,9 @@ ALTER TABLE dbo.PHANCONG ADD CONSTRAINT FK_MANV_PC_DA FOREIGN KEY (MADA) REFEREN
 ALTER TABLE dbo.DUAN ADD CONSTRAINT FK_MAPB_DA_PB FOREIGN KEY (MAPB) REFERENCES dbo.PHONGBAN (MAPB)
 GO
 
+-----------------------------------------------------------------INSERT Dữ liệu------------------------------------------
+
+-- 1. Phòng ban
 INSERT dbo.NHANVIEN
         ( HOTEN, NGSINH, DIACHI, SDT, LUONG, MAPB , GIOITINH )
 VALUES  ( N'Nguyễn Đức Hậu', -- HOTEN - nvarchar(100)
@@ -106,11 +114,11 @@ VALUES  ( N'Phòng nhân sự', -- TENPB - nvarchar(50)
           )
 UPDATE dbo.NHANVIEN SET GIOITINH = 'Nam'
 GO
-
+-------------------------------
 CREATE PROC USP_GetDSNV AS SELECT MANV,HOTEN,NGSINH,DIACHI,GIOITINH,SDT,LUONG,NHANVIEN.MAPB,TENPB FROM dbo.NHANVIEN JOIN dbo.PHONGBAN ON PHONGBAN.MAPB = NHANVIEN.MAPB
 EXEC USP_GetDSNV
 GO
-
+-------------------------------
 CREATE PROC USP_InsertNv
 	@hoten NVARCHAR(100),
 	@ngsinh DATE,
@@ -140,7 +148,7 @@ BEGIN
 	        )
 END
 GO
-
+------------------------------
 CREATE PROC USP_UpdateNV
 	@manv INT,
 	@hoten NVARCHAR(100),
@@ -155,6 +163,7 @@ BEGIN
 	UPDATE dbo.NHANVIEN SET HOTEN=@hoten,NGSINH=@ngsinh,DIACHI=@diachi,GIOITINH=@gioitinh,SDT=@sdt,LUONG=@luong,MAPB=@mapb WHERE MANV=@manv
 END
 GO
+-------------------------------
 CREATE PROC USP_DeleteNv
 @manv INT
 AS
@@ -162,6 +171,8 @@ BEGIN
 	DELETE dbo.NHANVIEN WHERE MANV=@manv
 END
 GO
+
+
 CREATE PROC USP_SearchNv
 @search NVARCHAR(100)
 AS
@@ -172,3 +183,4 @@ BEGIN
 	OR SDT LIKE  N'%' + @search + '%' OR LUONG LIKE  N'%' + @search + '%' OR NHANVIEN.MAPB LIKE  N'%' + @search + '%'
 	OR TENPB LIKE  N'%' + @search + '%')
 END
+\
