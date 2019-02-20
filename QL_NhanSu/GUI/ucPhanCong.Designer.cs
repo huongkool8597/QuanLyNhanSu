@@ -54,6 +54,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnRefesh = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.metroPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
@@ -91,7 +92,7 @@
             this.btnHuy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(106)))));
             this.btnHuy.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHuy.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.btnHuy.Location = new System.Drawing.Point(1059, 14);
+            this.btnHuy.Location = new System.Drawing.Point(1089, 14);
             this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(137, 43);
@@ -106,7 +107,7 @@
             this.btnCapNhat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(106)))));
             this.btnCapNhat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCapNhat.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.btnCapNhat.Location = new System.Drawing.Point(697, 14);
+            this.btnCapNhat.Location = new System.Drawing.Point(755, 14);
             this.btnCapNhat.Margin = new System.Windows.Forms.Padding(4);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(137, 43);
@@ -121,7 +122,7 @@
             this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(106)))));
             this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThem.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.btnThem.Location = new System.Drawing.Point(517, 14);
+            this.btnThem.Location = new System.Drawing.Point(583, 14);
             this.btnThem.Margin = new System.Windows.Forms.Padding(4);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(137, 43);
@@ -197,6 +198,7 @@
             // metroPanel4
             // 
             this.metroPanel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.metroPanel4.Controls.Add(this.btnRefesh);
             this.metroPanel4.Controls.Add(this.pictureBox2);
             this.metroPanel4.Controls.Add(this.txtSearch);
             this.metroPanel4.Controls.Add(this.btnHuy);
@@ -223,7 +225,7 @@
             this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(106)))));
             this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoa.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.btnXoa.Location = new System.Drawing.Point(865, 14);
+            this.btnXoa.Location = new System.Drawing.Point(921, 14);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(137, 43);
@@ -438,6 +440,21 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1797, 86);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
+            // btnRefesh
+            // 
+            this.btnRefesh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(106)))));
+            this.btnRefesh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRefesh.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.btnRefesh.Location = new System.Drawing.Point(426, 14);
+            this.btnRefesh.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRefesh.Name = "btnRefesh";
+            this.btnRefesh.Size = new System.Drawing.Size(137, 43);
+            this.btnRefesh.TabIndex = 24;
+            this.btnRefesh.Text = "Làm mới";
+            this.btnRefesh.UseCustomBackColor = true;
+            this.btnRefesh.UseCustomForeColor = true;
+            this.btnRefesh.UseSelectable = true;
+            // 
             // ucPhanCong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -490,5 +507,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private MetroFramework.Controls.MetroButton btnRefesh;
     }
 }

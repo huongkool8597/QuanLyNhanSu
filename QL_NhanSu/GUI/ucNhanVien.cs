@@ -96,9 +96,10 @@ namespace QL_NhanSu.GUI
 
         private void btnThem_Click(object sender, EventArgs e)
         {
+            long check;
             if (MessageBox.Show("Bạn có thật sự muốn thêm nhân viên có tên là: " + txtHoTen.Text, "Thông báo", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
             {
-                if (txtHoTen.Text == "" || txtDiaChi.Text == "" || txtLuong.Text == "" || txtSDT.Text == "" )
+                if (txtHoTen.Text == "" || txtDiaChi.Text == "" || txtLuong.Text == "" || txtSDT.Text == "" || Int64.TryParse(txtSDT.Text, out check) == false)
                 {
                     MessageBox.Show("Sai hoặc thiếu thông tin");
 //                    LoadListNV();
@@ -130,9 +131,10 @@ namespace QL_NhanSu.GUI
 
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
+            long check;
             if (MessageBox.Show("Bạn có thật sự muốn sửa nhân viên có tên là: " + txtHoTen.Text, "Thông báo", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
             {
-                if (txtHoTen.Text == "" || txtDiaChi.Text == "" || txtLuong.Text == "" || txtSDT.Text == "" || txtSDT.Text.Length != 10)
+                if (txtHoTen.Text == "" || txtDiaChi.Text == "" || txtLuong.Text == "" || txtSDT.Text == "" || txtSDT.Text.Length != 10 || Int64.TryParse(txtSDT.Text, out check) == false)
                 {
                     MessageBox.Show("Sai hoặc thiếu thông tin");
                 }
@@ -206,6 +208,11 @@ namespace QL_NhanSu.GUI
             string str = txtSearch.Text;
             dgvNhanVien.DataSource = NvList;
             NvList.DataSource = NhanVienDAO.Instance.SearchNv(str);
+        }
+
+        private void btnRefesh_Click(object sender, EventArgs e)
+        {
+            LoadListNV();
         }
     }
 }
