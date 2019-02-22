@@ -39,11 +39,11 @@
             this.metroPanel5 = new MetroFramework.Controls.MetroPanel();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
             this.metroPanel4 = new MetroFramework.Controls.MetroPanel();
+            this.btnRefesh = new MetroFramework.Controls.MetroButton();
             this.btnXoa = new MetroFramework.Controls.MetroButton();
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSoGio = new System.Windows.Forms.TextBox();
+            this.cboDuAn = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
@@ -54,7 +54,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnRefesh = new MetroFramework.Controls.MetroButton();
+            this.cboNhanVien = new MetroFramework.Controls.MetroComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.metroPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
@@ -220,6 +220,21 @@
             this.metroPanel4.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel4.VerticalScrollbarSize = 13;
             // 
+            // btnRefesh
+            // 
+            this.btnRefesh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(106)))));
+            this.btnRefesh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRefesh.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.btnRefesh.Location = new System.Drawing.Point(426, 14);
+            this.btnRefesh.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRefesh.Name = "btnRefesh";
+            this.btnRefesh.Size = new System.Drawing.Size(137, 43);
+            this.btnRefesh.TabIndex = 24;
+            this.btnRefesh.Text = "Làm mới";
+            this.btnRefesh.UseCustomBackColor = true;
+            this.btnRefesh.UseCustomForeColor = true;
+            this.btnRefesh.UseSelectable = true;
+            // 
             // btnXoa
             // 
             this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(106)))));
@@ -255,32 +270,24 @@
             this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel3.VerticalScrollbarSize = 13;
             // 
-            // textBox2
+            // txtSoGio
             // 
-            this.textBox2.Location = new System.Drawing.Point(204, 177);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(271, 22);
-            this.textBox2.TabIndex = 5;
+            this.txtSoGio.Location = new System.Drawing.Point(204, 177);
+            this.txtSoGio.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSoGio.Name = "txtSoGio";
+            this.txtSoGio.Size = new System.Drawing.Size(271, 22);
+            this.txtSoGio.TabIndex = 5;
             // 
-            // metroComboBox1
+            // cboDuAn
             // 
-            this.metroComboBox1.FormattingEnabled = true;
-            this.metroComboBox1.ItemHeight = 24;
-            this.metroComboBox1.Location = new System.Drawing.Point(204, 107);
-            this.metroComboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(271, 30);
-            this.metroComboBox1.TabIndex = 4;
-            this.metroComboBox1.UseSelectable = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(204, 43);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(271, 22);
-            this.textBox1.TabIndex = 3;
+            this.cboDuAn.FormattingEnabled = true;
+            this.cboDuAn.ItemHeight = 24;
+            this.cboDuAn.Location = new System.Drawing.Point(204, 107);
+            this.cboDuAn.Margin = new System.Windows.Forms.Padding(4);
+            this.cboDuAn.Name = "cboDuAn";
+            this.cboDuAn.Size = new System.Drawing.Size(271, 30);
+            this.cboDuAn.TabIndex = 4;
+            this.cboDuAn.UseSelectable = true;
             // 
             // metroLabel4
             // 
@@ -326,9 +333,9 @@
             // 
             // metroPanel2
             // 
-            this.metroPanel2.Controls.Add(this.textBox2);
-            this.metroPanel2.Controls.Add(this.metroComboBox1);
-            this.metroPanel2.Controls.Add(this.textBox1);
+            this.metroPanel2.Controls.Add(this.cboNhanVien);
+            this.metroPanel2.Controls.Add(this.txtSoGio);
+            this.metroPanel2.Controls.Add(this.cboDuAn);
             this.metroPanel2.Controls.Add(this.metroLabel4);
             this.metroPanel2.Controls.Add(this.metroLabel3);
             this.metroPanel2.Controls.Add(this.metroLabel2);
@@ -440,20 +447,16 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1797, 86);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
-            // btnRefesh
+            // cboNhanVien
             // 
-            this.btnRefesh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(106)))));
-            this.btnRefesh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRefesh.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.btnRefesh.Location = new System.Drawing.Point(426, 14);
-            this.btnRefesh.Margin = new System.Windows.Forms.Padding(4);
-            this.btnRefesh.Name = "btnRefesh";
-            this.btnRefesh.Size = new System.Drawing.Size(137, 43);
-            this.btnRefesh.TabIndex = 24;
-            this.btnRefesh.Text = "Làm mới";
-            this.btnRefesh.UseCustomBackColor = true;
-            this.btnRefesh.UseCustomForeColor = true;
-            this.btnRefesh.UseSelectable = true;
+            this.cboNhanVien.FormattingEnabled = true;
+            this.cboNhanVien.ItemHeight = 24;
+            this.cboNhanVien.Location = new System.Drawing.Point(204, 34);
+            this.cboNhanVien.Margin = new System.Windows.Forms.Padding(4);
+            this.cboNhanVien.Name = "cboNhanVien";
+            this.cboNhanVien.Size = new System.Drawing.Size(271, 30);
+            this.cboNhanVien.TabIndex = 6;
+            this.cboNhanVien.UseSelectable = true;
             // 
             // ucPhanCong
             // 
@@ -494,9 +497,8 @@
         private MetroFramework.Controls.MetroPanel metroPanel4;
         private MetroFramework.Controls.MetroButton btnXoa;
         private MetroFramework.Controls.MetroPanel metroPanel3;
-        private System.Windows.Forms.TextBox textBox2;
-        private MetroFramework.Controls.MetroComboBox metroComboBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSoGio;
+        private MetroFramework.Controls.MetroComboBox cboDuAn;
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroLabel metroLabel2;
@@ -508,5 +510,6 @@
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private MetroFramework.Controls.MetroButton btnRefesh;
+        private MetroFramework.Controls.MetroComboBox cboNhanVien;
     }
 }

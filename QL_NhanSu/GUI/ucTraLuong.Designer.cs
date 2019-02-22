@@ -42,7 +42,6 @@
             this.btnRefesh = new MetroFramework.Controls.MetroButton();
             this.btnXoa = new MetroFramework.Controls.MetroButton();
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
-            this.txtMaNv = new System.Windows.Forms.TextBox();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
@@ -55,6 +54,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.cboNhanVien = new MetroFramework.Controls.MetroComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.metroPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
@@ -270,14 +270,6 @@
             this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel3.VerticalScrollbarSize = 13;
             // 
-            // txtMaNv
-            // 
-            this.txtMaNv.Location = new System.Drawing.Point(204, 43);
-            this.txtMaNv.Margin = new System.Windows.Forms.Padding(4);
-            this.txtMaNv.Name = "txtMaNv";
-            this.txtMaNv.Size = new System.Drawing.Size(271, 22);
-            this.txtMaNv.TabIndex = 1;
-            // 
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
@@ -322,9 +314,9 @@
             // 
             // metroPanel2
             // 
+            this.metroPanel2.Controls.Add(this.cboNhanVien);
             this.metroPanel2.Controls.Add(this.dtpNgayNhan);
             this.metroPanel2.Controls.Add(this.txtLuong);
-            this.metroPanel2.Controls.Add(this.txtMaNv);
             this.metroPanel2.Controls.Add(this.metroLabel4);
             this.metroPanel2.Controls.Add(this.metroLabel3);
             this.metroPanel2.Controls.Add(this.metroLabel2);
@@ -452,6 +444,18 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1797, 86);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
+            // cboNhanVien
+            // 
+            this.cboNhanVien.FormattingEnabled = true;
+            this.cboNhanVien.ItemHeight = 24;
+            this.cboNhanVien.Location = new System.Drawing.Point(204, 44);
+            this.cboNhanVien.Margin = new System.Windows.Forms.Padding(4);
+            this.cboNhanVien.Name = "cboNhanVien";
+            this.cboNhanVien.Size = new System.Drawing.Size(271, 30);
+            this.cboNhanVien.TabIndex = 8;
+            this.cboNhanVien.Tag = "TenPB";
+            this.cboNhanVien.UseSelectable = true;
+            // 
             // ucTraLuong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -492,7 +496,6 @@
         private MetroFramework.Controls.MetroPanel metroPanel4;
         private MetroFramework.Controls.MetroButton btnXoa;
         private MetroFramework.Controls.MetroPanel metroPanel3;
-        private System.Windows.Forms.TextBox txtMaNv;
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroLabel metroLabel2;
@@ -506,5 +509,6 @@
         private System.Windows.Forms.TextBox txtLuong;
         private MetroFramework.Controls.MetroDateTime dtpNgayNhan;
         private MetroFramework.Controls.MetroButton btnRefesh;
+        private MetroFramework.Controls.MetroComboBox cboNhanVien;
     }
 }
