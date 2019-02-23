@@ -57,8 +57,11 @@
   <ItemGroup>
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\NhanVienDAO.cs" />
+    <Compile Include="DAO\TangCaDAO.cs" />
+    <Compile Include="DTO\MaNV_DTO.cs" />
     <Compile Include="DTO\MaPB_DTO.cs" />
     <Compile Include="DTO\NhanVienDTO.cs" />
+    <Compile Include="DTO\TangCaDTO.cs" />
     <Compile Include="GUI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>

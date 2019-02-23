@@ -48,13 +48,13 @@
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
+            this.cboMaNhanVien = new MetroFramework.Controls.MetroComboBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnBack = new System.Windows.Forms.PictureBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.cboNhanVien = new MetroFramework.Controls.MetroComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.metroPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
@@ -272,7 +272,7 @@
             // 
             // txtSoGio
             // 
-            this.txtSoGio.Location = new System.Drawing.Point(204, 177);
+            this.txtSoGio.Location = new System.Drawing.Point(204, 174);
             this.txtSoGio.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoGio.Name = "txtSoGio";
             this.txtSoGio.Size = new System.Drawing.Size(271, 22);
@@ -282,7 +282,7 @@
             // 
             this.cboDuAn.FormattingEnabled = true;
             this.cboDuAn.ItemHeight = 24;
-            this.cboDuAn.Location = new System.Drawing.Point(204, 107);
+            this.cboDuAn.Location = new System.Drawing.Point(204, 104);
             this.cboDuAn.Margin = new System.Windows.Forms.Padding(4);
             this.cboDuAn.Name = "cboDuAn";
             this.cboDuAn.Size = new System.Drawing.Size(271, 30);
@@ -294,7 +294,7 @@
             this.metroLabel4.AutoSize = true;
             this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLabel4.ForeColor = System.Drawing.Color.White;
-            this.metroLabel4.Location = new System.Drawing.Point(33, 177);
+            this.metroLabel4.Location = new System.Drawing.Point(33, 174);
             this.metroLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(123, 20);
@@ -308,7 +308,7 @@
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLabel3.ForeColor = System.Drawing.Color.White;
-            this.metroLabel3.Location = new System.Drawing.Point(33, 107);
+            this.metroLabel3.Location = new System.Drawing.Point(33, 104);
             this.metroLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(75, 20);
@@ -333,7 +333,7 @@
             // 
             // metroPanel2
             // 
-            this.metroPanel2.Controls.Add(this.cboNhanVien);
+            this.metroPanel2.Controls.Add(this.cboMaNhanVien);
             this.metroPanel2.Controls.Add(this.txtSoGio);
             this.metroPanel2.Controls.Add(this.cboDuAn);
             this.metroPanel2.Controls.Add(this.metroLabel4);
@@ -353,6 +353,17 @@
             this.metroPanel2.VerticalScrollbarBarColor = true;
             this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel2.VerticalScrollbarSize = 13;
+            // 
+            // cboMaNhanVien
+            // 
+            this.cboMaNhanVien.FormattingEnabled = true;
+            this.cboMaNhanVien.ItemHeight = 24;
+            this.cboMaNhanVien.Location = new System.Drawing.Point(204, 34);
+            this.cboMaNhanVien.Margin = new System.Windows.Forms.Padding(4);
+            this.cboMaNhanVien.Name = "cboMaNhanVien";
+            this.cboMaNhanVien.Size = new System.Drawing.Size(271, 30);
+            this.cboMaNhanVien.TabIndex = 6;
+            this.cboMaNhanVien.UseSelectable = true;
             // 
             // tableLayoutPanel2
             // 
@@ -447,17 +458,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1797, 86);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
-            // cboNhanVien
-            // 
-            this.cboNhanVien.FormattingEnabled = true;
-            this.cboNhanVien.ItemHeight = 24;
-            this.cboNhanVien.Location = new System.Drawing.Point(204, 34);
-            this.cboNhanVien.Margin = new System.Windows.Forms.Padding(4);
-            this.cboNhanVien.Name = "cboNhanVien";
-            this.cboNhanVien.Size = new System.Drawing.Size(271, 30);
-            this.cboNhanVien.TabIndex = 6;
-            this.cboNhanVien.UseSelectable = true;
-            // 
             // ucPhanCong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -510,6 +510,6 @@
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private MetroFramework.Controls.MetroButton btnRefesh;
-        private MetroFramework.Controls.MetroComboBox cboNhanVien;
+        private MetroFramework.Controls.MetroComboBox cboMaNhanVien;
     }
 }
