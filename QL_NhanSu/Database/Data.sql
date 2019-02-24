@@ -255,6 +255,9 @@ GO
 [dbo].[SP_ThanNhan_INSERT] 3, N'Lê Thị Mai', N'Nữ', '19981102', N'Vợ'
 GO
 -------------------------------Tăng ca----------------------------------------
+ALTER TABLE dbo.LAMTHEM ADD GhiChu NVARCHAR(100)
+ALTER TABLE dbo.LAMTHEM ADD MaTangCa INT IDENTITY PRIMARY KEY
+
 SELECT * FROM dbo.NHANVIEN
 INSERT dbo.LAMTHEM
         ( MANV, SOBUOI, TONGTIEN )
@@ -264,26 +267,58 @@ VALUES  ( 60, -- MANV - int
           )
 GO
 
-CREATE PROC USP_GetDSLamThem 
+CREATE VIEW v_LamThem 
+AS
+SELECT MaTangCa,NHANVIEN.MANV,HOTEN,SOBUOI,TONGTIEN,GhiChu,TONGTIEN/SOBUOI AS DONGIA FROM dbo.NHANVIEN,dbo.LAMTHEM WHERE dbo.NHANVIEN.MANV=dbo.LAMTHEM.MANV
+GO
+
+ALTER PROC USP_GetDSLamThem 
 AS 
-SELECT NHANVIEN.MANV,HOTEN,SOBUOI,TONGTIEN FROM dbo.NHANVIEN,dbo.LAMTHEM WHERE dbo.NHANVIEN.MANV=dbo.LAMTHEM.MANV
+	SELECT * FROM dbo.v_LamThem
 GO
 
 CREATE PROC USP_InsertLamthem
 	@manv INT,
 	@sogio INT,
-	@sotien INT
+	@dongia INT
 AS
 BEGIN
-	IF (SELECT COUNT(*) FROM dbo.LAMTHEM WHERE MANV=@manv) > 0
+	IF (SELECT COUNT(*) FROM dbo.LAMTHEM WHERE MANV=@manv AND GhiChu IS NULL) > 0
 	BEGIN
-		UPDATE dbo.LAMTHEM SET SOBUOI=SOBUOI+@sogio, TONGTIEN=TONGTIEN+@sotien WHERE MANV=@manv
+		UPDATE dbo.LAMTHEM SET SOBUOI=SOBUOI+@sogio, TONGTIEN=TONGTIEN+@sogio*@dongia WHERE MANV=@manv AND GhiChu IS NULL
 	END
 	ELSE
 	INSERT dbo.LAMTHEM
 	        ( MANV, SOBUOI, TONGTIEN )
 	VALUES  ( @manv, -- MANV - int
 	          @sogio, -- SOBUOI - int
-	          @sotien  -- TONGTIEN - int
+	          @sogio*@dongia  -- TONGTIEN - int
 	          )
 END
+GO
+CREATE PROC USP_UpdateLamthem
+	@matangca INT,
+	@manv INT,
+	@sogio INT,
+	@dongia INT,
+	@ghichu NVARCHAR(100)
+AS
+BEGIN
+	UPDATE dbo.LAMTHEM SET SOBUOI=@sogio,TONGTIEN=@sogio*@dongia,GhiChu=@ghichu WHERE MaTangCa = @matangca
+END
+GO
+CREATE PROC USP_DeleteLamThem
+@matangca INT
+AS
+BEGIN
+	DELETE FROM dbo.LAMTHEM WHERE MaTangCa = @matangca
+END
+GO
+CREATE PROC USP_SearchLamThem
+@search NVARCHAR(100)
+AS
+BEGIN
+	SELECT * FROM dbo.v_LamThem WHERE MANV LIKE N'%' + @search + '%' OR HOTEN LIKE N'%' + @search + '%' 
+	OR SOBUOI LIKE N'%' + @search + '%' OR TONGTIEN LIKE N'%' + @search + '%' OR DONGIA LIKE N'%' + @search + '%'
+END
+GO

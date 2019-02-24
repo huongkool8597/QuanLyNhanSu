@@ -46,6 +46,29 @@ namespace QL_NhanSu.DAO
 
             return result > 0;
         }
+        public bool UpdateTangCa(int manv, int sogio, int dongia, string ghichu , int matangca)
+        {
+            int result = DataProvider.Instance.ExecuteNonQuery(" EXEC dbo.USP_UpdateLamthem @matangca , @manv , @sogio , @dongia , @ghichu ", new object[] { matangca , manv, sogio , dongia , ghichu});
+
+            return result > 0;
+        }
+        public bool DeleteTangCa(int matangca)
+        {
+            int result = DataProvider.Instance.ExecuteNonQuery(" EXEC dbo.USP_DeleteLamThem @matangca ", new object[] { matangca });
+
+            return result > 0;
+        }
+        public List<TangCaDTO> SearchTangCa(string str)
+        {
+            List<TangCaDTO> TcList = new List<TangCaDTO>();
+            DataTable data = DataProvider.Instance.ExecuteQuery("EXEC USP_SearchLamThem @search ", new object[] { str });
+            foreach (DataRow item in data.Rows)
+            {
+                TangCaDTO TangCa = new TangCaDTO(item);
+                TcList.Add(TangCa);
+            }
+            return TcList;
+        }
     }
 }
 
