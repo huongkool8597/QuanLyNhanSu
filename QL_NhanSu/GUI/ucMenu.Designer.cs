@@ -31,7 +31,6 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.btnHuongDan = new MetroFramework.Controls.MetroTile();
-            this.TK_TraLuong = new MetroFramework.Controls.MetroTile();
             this.btnTraLuong = new MetroFramework.Controls.MetroTile();
             this.btnTangCa = new MetroFramework.Controls.MetroTile();
             this.btnPhongBan = new MetroFramework.Controls.MetroTile();
@@ -64,7 +63,6 @@
             // metroPanel1
             // 
             this.metroPanel1.Controls.Add(this.btnHuongDan);
-            this.metroPanel1.Controls.Add(this.TK_TraLuong);
             this.metroPanel1.Controls.Add(this.btnTraLuong);
             this.metroPanel1.Controls.Add(this.btnTangCa);
             this.metroPanel1.Controls.Add(this.btnPhongBan);
@@ -107,36 +105,14 @@
             this.btnHuongDan.UseTileImage = true;
             this.btnHuongDan.Click += new System.EventHandler(this.btnHuongDan_Click);
             // 
-            // TK_TraLuong
-            // 
-            this.TK_TraLuong.ActiveControl = null;
-            this.TK_TraLuong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.TK_TraLuong.ForeColor = System.Drawing.Color.White;
-            this.TK_TraLuong.Location = new System.Drawing.Point(595, 259);
-            this.TK_TraLuong.Name = "TK_TraLuong";
-            this.TK_TraLuong.Size = new System.Drawing.Size(246, 164);
-            this.TK_TraLuong.TabIndex = 5;
-            this.TK_TraLuong.Tag = "ucThongKe";
-            this.TK_TraLuong.Text = "Thống kê phát lương";
-            this.TK_TraLuong.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.TK_TraLuong.TileImage = global::QL_NhanSu.Properties.Resources.estatisticas_branco;
-            this.TK_TraLuong.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.TK_TraLuong.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.TK_TraLuong.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
-            this.TK_TraLuong.UseCustomBackColor = true;
-            this.TK_TraLuong.UseCustomForeColor = true;
-            this.TK_TraLuong.UseSelectable = true;
-            this.TK_TraLuong.UseTileImage = true;
-            this.TK_TraLuong.Click += new System.EventHandler(this.btn_Click);
-            // 
             // btnTraLuong
             // 
             this.btnTraLuong.ActiveControl = null;
             this.btnTraLuong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnTraLuong.ForeColor = System.Drawing.Color.White;
-            this.btnTraLuong.Location = new System.Drawing.Point(595, 70);
+            this.btnTraLuong.Location = new System.Drawing.Point(43, 451);
             this.btnTraLuong.Name = "btnTraLuong";
-            this.btnTraLuong.Size = new System.Drawing.Size(246, 164);
+            this.btnTraLuong.Size = new System.Drawing.Size(518, 164);
             this.btnTraLuong.TabIndex = 4;
             this.btnTraLuong.Tag = "ucTraLuong";
             this.btnTraLuong.Text = "Thanh toán lương";
@@ -156,7 +132,7 @@
             this.btnTangCa.ActiveControl = null;
             this.btnTangCa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnTangCa.ForeColor = System.Drawing.Color.White;
-            this.btnTangCa.Location = new System.Drawing.Point(315, 451);
+            this.btnTangCa.Location = new System.Drawing.Point(595, 259);
             this.btnTangCa.Margin = new System.Windows.Forms.Padding(4);
             this.btnTangCa.Name = "btnTangCa";
             this.btnTangCa.Size = new System.Drawing.Size(246, 164);
@@ -202,7 +178,7 @@
             this.btnPhanCong.ActiveControl = null;
             this.btnPhanCong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(85)))), ((int)(((byte)(45)))));
             this.btnPhanCong.ForeColor = System.Drawing.Color.White;
-            this.btnPhanCong.Location = new System.Drawing.Point(43, 451);
+            this.btnPhanCong.Location = new System.Drawing.Point(43, 259);
             this.btnPhanCong.Margin = new System.Windows.Forms.Padding(4);
             this.btnPhanCong.Name = "btnPhanCong";
             this.btnPhanCong.Size = new System.Drawing.Size(246, 164);
@@ -248,7 +224,7 @@
             this.btnDuAn.ActiveControl = null;
             this.btnDuAn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(133)))), ((int)(((byte)(238)))));
             this.btnDuAn.ForeColor = System.Drawing.Color.White;
-            this.btnDuAn.Location = new System.Drawing.Point(43, 259);
+            this.btnDuAn.Location = new System.Drawing.Point(595, 70);
             this.btnDuAn.Margin = new System.Windows.Forms.Padding(4);
             this.btnDuAn.Name = "btnDuAn";
             this.btnDuAn.Size = new System.Drawing.Size(246, 164);
@@ -312,7 +288,6 @@
         private MetroFramework.Controls.MetroTile btnDuAn;
         private MetroFramework.Controls.MetroTile btnNhanVien;
         private MetroFramework.Controls.MetroTile btnTraLuong;
-        private MetroFramework.Controls.MetroTile TK_TraLuong;
         private MetroFramework.Controls.MetroTile btnHuongDan;
         private MetroFramework.Controls.MetroTile btnTangCa;
     }
