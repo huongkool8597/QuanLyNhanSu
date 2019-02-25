@@ -324,8 +324,8 @@ END
 GO
 
 -------------------------------------------Dự Án------------------------------------------------------
-CREATE PROC USP_GetDSDA 
-AS SELECT MADA, TENDA, DIADIEM, DUAN.MAPB 
+ALTER PROC USP_GetDSDA 
+AS SELECT MADA, TENDA, DIADIEM, DUAN.MAPB, PHONGBAN.TENPB
 FROM DUAN JOIN dbo.PHONGBAN ON PHONGBAN.MAPB = DUAN.MAPB
 GO
 
@@ -383,3 +383,4 @@ BEGIN
 		OR (PB.TENPB Like N'%' + @SEARCHVALUE + '%'))
 END
 GO
+USP_GetDSDA
