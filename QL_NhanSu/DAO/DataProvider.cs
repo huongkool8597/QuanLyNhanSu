@@ -20,7 +20,7 @@ namespace QL_NhanSu.DAO
 
         private DataProvider() { }
 
-        string connectionSTR = @"Data Source=(local);Initial Catalog=TT_QLNV;Integrated Security=True";
+        string connectionSTR = @"Data Source=DESKTOP-AGHHB64\HIEUNGUYEN;Initial Catalog=TT_QLNV;Integrated Security=True";
 
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {

@@ -322,3 +322,5 @@ BEGIN
 	OR SOBUOI LIKE N'%' + @search + '%' OR TONGTIEN LIKE N'%' + @search + '%' OR DONGIA LIKE N'%' + @search + '%'
 END
 GO
+
+[dbo].[SP_ThanNhan_GETALL][dbo].[SP_ThanNhan_INSERT][dbo].[SP_ThanNhan_UPDATE][dbo].[SP_ThanNhan_UPDATE][dbo].[SP_ThanNhan_DELETE][dbo].[SP_ThanNhan_SEARCH]
