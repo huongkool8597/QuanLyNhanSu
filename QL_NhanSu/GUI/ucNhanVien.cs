@@ -113,8 +113,8 @@ namespace QL_NhanSu.GUI
                     string gioiTinh = radNam.Checked ? "Nam" : "Nữ";
                     int luong;
                     Int32.TryParse(txtLuong.Text, out luong);
-                    int maPB;
-                    Int32.TryParse(cboPhongBan.Text, out maPB);
+                        int maPB;
+                        Int32.TryParse(cboPhongBan.Text, out maPB);
                     string sDT = txtSDT.Text; ;
                     if (NhanVienDAO.Instance.InsertNv(hoTen, ngaySinh, diaChi, gioiTinh, sDT, luong, maPB))
                     {

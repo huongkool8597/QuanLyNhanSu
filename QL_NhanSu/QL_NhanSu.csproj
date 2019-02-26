@@ -58,12 +58,14 @@
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\DuAnDAO.cs" />
     <Compile Include="DAO\NhanVienDAO.cs" />
+    <Compile Include="DAO\PhongBanDAO.cs" />
     <Compile Include="DAO\TangCaDAO.cs" />
     <Compile Include="DAO\ThanNhan_DAO.cs" />
     <Compile Include="DTO\DuAnDTO.cs" />
     <Compile Include="DTO\MaNV_DTO.cs" />
     <Compile Include="DTO\MaPB_DTO.cs" />
     <Compile Include="DTO\NhanVienDTO.cs" />
+    <Compile Include="DTO\PhongBanDTO.cs" />
     <Compile Include="DTO\TangCaDTO.cs" />
     <Compile Include="DTO\ThanNhan_DTO.cs" />
     <Compile Include="GUI\Form1.cs">
