@@ -19,7 +19,7 @@ namespace QL_NhanSu.DAO
         }
 
         /// <summary>
-        /// Hiển thị danh sách thân nhân sử dụng Store Procedure
+        /// Lấy ra danh sách thân nhân sử dụng Store Procedure
         /// </summary>
         /// <returns>Trả về list thân nhân</returns>
         public List<ThanNhan_DTO> GetAllThanNhan()
@@ -34,7 +34,23 @@ namespace QL_NhanSu.DAO
             return list;
 
         }
-      
+
+        /// <summary>
+        /// Lấy ra list mã nhân viên
+        /// </summary>
+        /// <returns>Danh sách mã nhân viên</returns>
+        public List<ThanNhan_DTO> getListMaNhanVien()
+        {
+            List<ThanNhan_DTO> maNhanVienList = new List<ThanNhan_DTO>();
+            DataTable data = DataProvider.Instance.ExecuteQuery("SELECT MANV FROM dbo.THANNHAN");
+            foreach (DataRow item in data.Rows)
+            {
+                ThanNhan_DTO ma = new ThanNhan_DTO(item);
+                maNhanVienList.Add(ma);
+            }
+            return maNhanVienList;
+        }
+
         /// <summary>
         /// Thêm thân nhân vào database
         /// </summary>
