@@ -84,6 +84,7 @@ D:\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csproj.CoreCompileInputs.
 D:\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csproj.CopyComplete
 D:\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.exe
 D:\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.pdb
+<<<<<<< HEAD
 C:\Users\hieun\Desktop\Học kì 6\Thực tập nhóm\QuanLyNhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.exe.config
 C:\Users\hieun\Desktop\Học kì 6\Thực tập nhóm\QuanLyNhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.exe
 C:\Users\hieun\Desktop\Học kì 6\Thực tập nhóm\QuanLyNhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.pdb
@@ -103,3 +104,24 @@ C:\Users\hieun\Desktop\Học kì 6\Thực tập nhóm\QuanLyNhanSu\QL_NhanSu\obj
 C:\Users\hieun\Desktop\Học kì 6\Thực tập nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csproj.CopyComplete
 C:\Users\hieun\Desktop\Học kì 6\Thực tập nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.exe
 C:\Users\hieun\Desktop\Học kì 6\Thực tập nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.pdb
+=======
+E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.exe.config
+E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.exe
+E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.pdb
+E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csprojAssemblyReference.cache
+E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.frmMain.resources
+E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.GUI.ucDuAn.resources
+E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.GUI.ucMenu.resources
+E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.GUI.ucNhanVien.resources
+E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.GUI.ucPhanCong.resources
+E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.GUI.ucPhongBan.resources
+E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.GUI.ucTangCa.resources
+E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.GUI.ucThanNhan.resources
+E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.GUI.ucTraLuong.resources
+E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.Properties.Resources.resources
+E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csproj.GenerateResource.cache
+E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csproj.CoreCompileInputs.cache
+E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csproj.CopyComplete
+E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.exe
+E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.pdb
+>>>>>>> a38cd09d82ac1013ab7a61b4b5efd3e702ab688c
