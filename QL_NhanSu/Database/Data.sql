@@ -252,8 +252,10 @@ GO
 GO
 [dbo].[SP_ThanNhan_INSERT] 4, N'Nguyễn Xuân Bình', N'Nữ', '19781102', N'Bố'
 GO
-[dbo].[SP_ThanNhan_INSERT] 1003, N'Lê Hoàng Nam', N'Nam', '19981102', N'Con'
+[dbo].[SP_ThanNhan_INSERT] 1005, N'Nam', N'Nam', '19981102', N'Con'
 GO
+
+
 -------------------------------Tăng ca----------------------------------------
 ALTER TABLE dbo.LAMTHEM ADD GhiChu NVARCHAR(100)
 ALTER TABLE dbo.LAMTHEM ADD MaTangCa INT IDENTITY PRIMARY KEY

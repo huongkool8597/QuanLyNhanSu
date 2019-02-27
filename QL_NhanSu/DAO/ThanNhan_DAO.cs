@@ -92,7 +92,7 @@ namespace QL_NhanSu.DAO
         /// <returns>True nếu thành công, False nếu thất bại</returns>
         public bool DeleteThanNhan(int manv, string hoTenThanNhan)
         {
-            int result = DataProvider.Instance.ExecuteNonQuery(" EXEC [dbo].[SP_ThanNhan_DELETE] @MANV @HOTENTN ", new object[] { manv, hoTenThanNhan });
+            int result = DataProvider.Instance.ExecuteNonQuery(" EXEC SP_ThanNhan_DELETE @MANV @HOTENTN ", new object[] { manv, hoTenThanNhan });
 
             return result > 0;
         }

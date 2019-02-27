@@ -110,5 +110,43 @@ namespace QL_NhanSu.GUI
         {
             LoadListThanNhan();
         }
+
+        /// <summary>
+        /// Làm trống form
+        /// </summary>
+        void ResetFormToNull()
+        {
+            txtQuanHe.Text = "";
+            txtHoTenThanNhan.Text = "";
+            txtSearch.Text = "";
+            dtpNgaySinh.Value = DateTime.Now;
+            LoadIntoComBoBoxMaNhanVien();
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            ResetFormToNull();
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có thật sự muốn xóa thân nhân của nhân viên có tên là: " + txtHoTenThanNhan.Text, "Thông báo", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+            {
+                int maNV;
+                string hoTenThanNhan = txtHoTenThanNhan.Text;
+                Int32.TryParse(cboMaNhanVien.Text, out maNV);
+                try
+                {
+                    ThanNhan_DAO.Instance.DeleteThanNhan(maNV, hoTenThanNhan);
+                    MessageBox.Show("Xóa thân nhân của nhân viên thành công! ");
+                    LoadFirstTime();
+                } catch (Exception error)
+                {
+                    // MessageBox.Show("Có lỗi khi xóa thân nhân! Vui lòng thử lại.");
+                    Console.WriteLine(error);
+
+                }
+            }
+        }
     }
 }
