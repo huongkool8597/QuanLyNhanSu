@@ -250,9 +250,9 @@ GO
 
 [dbo].[SP_ThanNhan_INSERT] 3, N'Võ Thị Thanh Thảo', N'Nữ', '19791201', N'Mẹ'
 GO
-[dbo].[SP_ThanNhan_INSERT] 3, N'Nguyễn Xuân Bình', N'Nữ', '19781102', N'Bố'
+[dbo].[SP_ThanNhan_INSERT] 4, N'Nguyễn Xuân Bình', N'Nữ', '19781102', N'Bố'
 GO
-[dbo].[SP_ThanNhan_INSERT] 3, N'Lê Thị Mai', N'Nữ', '19981102', N'Vợ'
+[dbo].[SP_ThanNhan_INSERT] 1003, N'Lê Hoàng Nam', N'Nam', '19981102', N'Con'
 GO
 -------------------------------Tăng ca----------------------------------------
 ALTER TABLE dbo.LAMTHEM ADD GhiChu NVARCHAR(100)
@@ -322,5 +322,3 @@ BEGIN
 	OR SOBUOI LIKE N'%' + @search + '%' OR TONGTIEN LIKE N'%' + @search + '%' OR DONGIA LIKE N'%' + @search + '%'
 END
 GO
-
-[dbo].[SP_ThanNhan_GETALL][dbo].[SP_ThanNhan_INSERT][dbo].[SP_ThanNhan_UPDATE][dbo].[SP_ThanNhan_UPDATE][dbo].[SP_ThanNhan_DELETE][dbo].[SP_ThanNhan_SEARCH]

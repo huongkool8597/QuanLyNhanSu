@@ -39,13 +39,14 @@ namespace QL_NhanSu.DAO
         /// Lấy ra list mã nhân viên
         /// </summary>
         /// <returns>Danh sách mã nhân viên</returns>
-        public List<ThanNhan_DTO> getListMaNhanVien()
+        public List<MaNV_DTO> GetListMaNhanVien()
         {
-            List<ThanNhan_DTO> maNhanVienList = new List<ThanNhan_DTO>();
-            DataTable data = DataProvider.Instance.ExecuteQuery("SELECT MANV FROM dbo.THANNHAN");
+            List<MaNV_DTO> maNhanVienList = new List<MaNV_DTO>();
+            DataTable data = DataProvider.Instance.ExecuteQuery("SELECT MANV FROM dbo.NHANVIEN");
+
             foreach (DataRow item in data.Rows)
             {
-                ThanNhan_DTO ma = new ThanNhan_DTO(item);
+                MaNV_DTO ma = new MaNV_DTO(item);
                 maNhanVienList.Add(ma);
             }
             return maNhanVienList;

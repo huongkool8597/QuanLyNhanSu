@@ -16,25 +16,37 @@ namespace QL_NhanSu.GUI
         BindingSource thanNhanList = new BindingSource();
 
         ////////////////////////////// LOADING FOR FIRST TIME ////////////////////////////// 
+
         public ucThanNhan()
         {
             InitializeComponent();
             LoadFirstTime();
         }
 
+        /// <summary>
+        /// Load lần đầu tiên khi vào trong view
+        /// </summary>
         private void LoadFirstTime()
         {
-            // dgvThanNhan.DataSource = thanNhanList;
+            dgvThanNhan.DataSource = thanNhanList;
             LoadListThanNhan();
+            EditDataGridView();
+            LoadIntoComBoBoxMaNhanVien();
+            BindingDataToFrom();
         }
 
+        /// <summary>
+        /// Load list thân nhân từ Database và đẩy ra gridview
+        /// </summary>
         private void LoadListThanNhan ()
         {
-            dgvThanNhan.DataSource = thanNhanList;
+            
             thanNhanList.DataSource = ThanNhan_DAO.Instance.GetAllThanNhan();
-            EditDataGridView();
         }
 
+        /// <summary>
+        /// Đổi tên cột tương ứng trong gridview
+        /// </summary>
         private void EditDataGridView()
         {
             dgvThanNhan.Columns["MaNV"].HeaderText = "Mã nhân viên";
@@ -42,7 +54,39 @@ namespace QL_NhanSu.GUI
             dgvThanNhan.Columns["NgaySinh"].HeaderText = "Ngày sinh";
             dgvThanNhan.Columns["GioiTinh"].HeaderText = "Giới tính";
             dgvThanNhan.Columns["QuanHe"].HeaderText = "Quan hệ";
+        }
 
+        /// <summary>
+        /// Load và hiển thị dữ liệu mã nhân viên ra combobox
+        /// </summary>
+        private void LoadIntoComBoBoxMaNhanVien()
+        {
+            cboMaNhanVien.DataSource = ThanNhan_DAO.Instance.GetListMaNhanVien();
+            cboMaNhanVien.DisplayMember = "MANV";
+        }
+
+        /// <summary>
+        /// BindingData ra các ô: text box, giới tính, ngày sinh
+        /// </summary>
+        private void BindingDataToFrom ()
+        {
+            txtHoTenThanNhan.DataBindings.Add(new Binding("Text", dgvThanNhan.DataSource, "HoTenThanNhan", true, DataSourceUpdateMode.Never));
+            txtQuanHe.DataBindings.Add(new Binding("Text", dgvThanNhan.DataSource, "QuanHe", true, DataSourceUpdateMode.Never));
+
+            cboMaNhanVien.DataBindings.Add(new Binding("Text", dgvThanNhan.DataSource, "MaNV", true, DataSourceUpdateMode.Never));
+
+            dtpNgaySinh.DataBindings.Add(new Binding("Text", dgvThanNhan.DataSource, "NgaySinh", true, DataSourceUpdateMode.Never));
+
+            var fmaleBinding = new Binding("Checked", dgvThanNhan.DataSource, "GioiTinh", true, DataSourceUpdateMode.Never);
+            // when Formatting (reading from datasource), return true for Female, else false
+            fmaleBinding.Format += (s, args) => args.Value = ((string)args.Value) == "Nữ";
+            // when Parsing (writing to datasource), return "Male" for true, else "Fmale"
+            fmaleBinding.Parse += (s, args) => args.Value = (bool)args.Value ? "Nữ" : "Nam";
+            // add the binding
+            radNu.DataBindings.Add(fmaleBinding);
+            // you don't need to bind the Male radiobutton, just make it do the opposite
+            // of Male by handling the CheckedChanged event on Male:
+            radNu.CheckedChanged += (s, args) => radNam.Checked = !radNu.Checked;
         }
         ////////////////////////////// HANDLE EVENT OF BUTTON ////////////////////////////// 
         private void btnBack_Click(object sender, EventArgs e)
@@ -60,6 +104,11 @@ namespace QL_NhanSu.GUI
         private void dgvThanNhan_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            LoadListThanNhan();
         }
     }
 }
