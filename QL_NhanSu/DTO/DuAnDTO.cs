@@ -13,18 +13,22 @@ namespace QL_NhanSu.DTO
         private string tenDA;
         private string diaDiem;
         private int maPB;
+        private string tenPB;
 
         public int MaDA { get => maDA; set => maDA = value; }
         public string TenDA { get => tenDA; set => tenDA = value; }
         public string DiaDiem { get => diaDiem; set => diaDiem = value; }
         public int MaPB { get => maPB; set => maPB = value; }
+        public string TenPB { get => tenPB; set => tenPB = value; }
 
-        public DuAnDTO(int maDA, string tenDA, string diaDiem, int maPB)
+        public DuAnDTO(int maDA, string tenDA, string diaDiem, int maPB,string tenPB)
         {
             this.maDA = maDA;
             this.tenDA = tenDA;
             this.diaDiem = diaDiem;
             this.maPB = maPB;
+            this.tenPB = tenPB;
+   
         }
 
         public DuAnDTO(DataRow row)
@@ -33,6 +37,8 @@ namespace QL_NhanSu.DTO
             this.tenDA = row["TENDA"].ToString();
             this.diaDiem = row["DIADIEM"].ToString();
             Int32.TryParse(row["MAPB"].ToString(), out this.maPB);
+            this.tenPB = row["TENPB"].ToString();
+
         }
     }
 }

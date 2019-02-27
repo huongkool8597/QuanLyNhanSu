@@ -60,6 +60,8 @@ namespace QL_NhanSu.GUI
             dgvDuAn.Columns["MaPB"].Visible = false;
             dgvDuAn.Columns["MAPB"].HeaderText = "Mã phòng ban phụ trách";
             dgvDuAn.Columns["MAPB"].Width = 240;
+            dgvDuAn.Columns["TENPB"].HeaderText = "Tên phòng ban phụ trách";
+            dgvDuAn.Columns["TENPB"].Width = 200;
         }
 
             private void btnBack_Click(object sender, EventArgs e)
