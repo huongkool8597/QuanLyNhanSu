@@ -1,4 +1,4 @@
-﻿D:\VS_2017\QL_NhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csprojAssemblyReference.cache
+D:\VS_2017\QL_NhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csprojAssemblyReference.cache
 D:\VS_2017\QL_NhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.Properties.Resources.resources
 D:\VS_2017\QL_NhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csproj.GenerateResource.cache
 D:\VS_2017\QL_NhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csproj.CoreCompileInputs.cache
@@ -141,4 +141,3 @@ D:\Bài giảng năm 3 kỳ 2\TT Nhóm\QLNSu\QuanLyNhanSu\QL_NhanSu\bin\Debug\QL
 D:\Bài giảng năm 3 kỳ 2\TT Nhóm\QLNSu\QuanLyNhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.exe
 D:\Bài giảng năm 3 kỳ 2\TT Nhóm\QLNSu\QuanLyNhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.pdb
 D:\Bài giảng năm 3 kỳ 2\TT Nhóm\QLNSu\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csproj.CopyComplete
-
