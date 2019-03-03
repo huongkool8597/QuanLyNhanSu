@@ -93,7 +93,7 @@
             this.dgvPhongBan.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dgvPhongBan.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dgvPhongBan.Location = new System.Drawing.Point(0, 386);
-            this.dgvPhongBan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvPhongBan.Margin = new System.Windows.Forms.Padding(4);
             this.dgvPhongBan.Name = "dgvPhongBan";
             this.dgvPhongBan.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -104,6 +104,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvPhongBan.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvPhongBan.RowHeadersVisible = false;
             this.dgvPhongBan.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvPhongBan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPhongBan.Size = new System.Drawing.Size(1408, 393);
@@ -126,7 +127,7 @@
             this.metroPanel4.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel4.HorizontalScrollbarSize = 12;
             this.metroPanel4.Location = new System.Drawing.Point(0, 309);
-            this.metroPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.metroPanel4.Name = "metroPanel4";
             this.metroPanel4.Size = new System.Drawing.Size(1408, 77);
             this.metroPanel4.TabIndex = 9;
@@ -143,7 +144,7 @@
             this.btnRefesh.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRefesh.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnRefesh.Location = new System.Drawing.Point(419, 14);
-            this.btnRefesh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRefesh.Margin = new System.Windows.Forms.Padding(4);
             this.btnRefesh.Name = "btnRefesh";
             this.btnRefesh.Size = new System.Drawing.Size(137, 43);
             this.btnRefesh.TabIndex = 9;
@@ -157,7 +158,7 @@
             // 
             this.btnsearch.Image = global::QL_NhanSu.Properties.Resources.search;
             this.btnsearch.Location = new System.Drawing.Point(352, 14);
-            this.btnsearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnsearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnsearch.Name = "btnsearch";
             this.btnsearch.Size = new System.Drawing.Size(43, 39);
             this.btnsearch.TabIndex = 22;
@@ -168,7 +169,7 @@
             // txtSearch
             // 
             this.txtSearch.Location = new System.Drawing.Point(41, 14);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(301, 42);
@@ -181,7 +182,7 @@
             this.btnHuy.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHuy.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnHuy.Location = new System.Drawing.Point(1139, 14);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(137, 43);
             this.btnHuy.TabIndex = 7;
@@ -197,7 +198,7 @@
             this.btnCapNhat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCapNhat.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnCapNhat.Location = new System.Drawing.Point(757, 14);
-            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(4);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(137, 43);
             this.btnCapNhat.TabIndex = 5;
@@ -213,7 +214,7 @@
             this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoa.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnXoa.Location = new System.Drawing.Point(948, 14);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(137, 43);
             this.btnXoa.TabIndex = 6;
@@ -229,7 +230,7 @@
             this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThem.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnThem.Location = new System.Drawing.Point(587, 14);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(137, 43);
             this.btnThem.TabIndex = 4;
@@ -255,7 +256,7 @@
             this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel2.HorizontalScrollbarSize = 12;
             this.metroPanel2.Location = new System.Drawing.Point(0, 86);
-            this.metroPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.metroPanel2.Name = "metroPanel2";
             this.metroPanel2.Size = new System.Drawing.Size(1408, 223);
             this.metroPanel2.TabIndex = 7;
@@ -269,7 +270,7 @@
             // txtTenPB
             // 
             this.txtTenPB.Location = new System.Drawing.Point(325, 105);
-            this.txtTenPB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenPB.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenPB.Name = "txtTenPB";
             this.txtTenPB.Size = new System.Drawing.Size(313, 22);
             this.txtTenPB.TabIndex = 1;
@@ -278,7 +279,7 @@
             // dtpNgNhanChuc
             // 
             this.dtpNgNhanChuc.Location = new System.Drawing.Point(867, 107);
-            this.dtpNgNhanChuc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpNgNhanChuc.Margin = new System.Windows.Forms.Padding(4);
             this.dtpNgNhanChuc.MinimumSize = new System.Drawing.Size(0, 30);
             this.dtpNgNhanChuc.Name = "dtpNgNhanChuc";
             this.dtpNgNhanChuc.Size = new System.Drawing.Size(311, 30);
@@ -290,7 +291,7 @@
             this.cboTruongPhong.FormattingEnabled = true;
             this.cboTruongPhong.ItemHeight = 24;
             this.cboTruongPhong.Location = new System.Drawing.Point(867, 36);
-            this.cboTruongPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboTruongPhong.Margin = new System.Windows.Forms.Padding(4);
             this.cboTruongPhong.Name = "cboTruongPhong";
             this.cboTruongPhong.Size = new System.Drawing.Size(311, 30);
             this.cboTruongPhong.TabIndex = 2;
@@ -378,7 +379,7 @@
             this.tableLayoutPanel1.Controls.Add(this.btnBack, 2, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -394,7 +395,7 @@
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 12;
             this.metroPanel1.Location = new System.Drawing.Point(4, 4);
-            this.metroPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.metroPanel1.Name = "metroPanel1";
             this.metroPanel1.Size = new System.Drawing.Size(414, 78);
             this.metroPanel1.TabIndex = 0;
@@ -424,7 +425,7 @@
             // 
             this.pictureBox1.Image = global::QL_NhanSu.Properties.Resources.PhongBan;
             this.pictureBox1.Location = new System.Drawing.Point(5, 5);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(60, 60);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -436,7 +437,7 @@
             this.btnBack.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnBack.Image = global::QL_NhanSu.Properties.Resources.back;
             this.btnBack.Location = new System.Drawing.Point(1344, 4);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(60, 78);
             this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -452,7 +453,7 @@
             this.Controls.Add(this.metroPanel4);
             this.Controls.Add(this.metroPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ucPhongBan";
             this.Size = new System.Drawing.Size(1408, 779);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhongBan)).EndInit();
