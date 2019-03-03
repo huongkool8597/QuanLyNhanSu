@@ -18,10 +18,10 @@ namespace QL_NhanSu.GUI
         public ucTangCa()
         {
             InitializeComponent();
-            Load();
+            LoadFirstTime();
         }
 
-        void Load()
+        void LoadFirstTime()
         {
             dgvTangCa.DataSource = TangCaList;
             LoadListTangCa();

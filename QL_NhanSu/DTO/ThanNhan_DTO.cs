@@ -32,11 +32,12 @@ namespace QL_NhanSu.DTO
 
         public ThanNhan_DTO(DataRow row)
         {
-            Int32.TryParse(row["MaNhanVien"].ToString(), out this.maNV);
-            this.hoTenThanNhan = row["HoTen"].ToString();
-            this.ngaySinh = (DateTime)row["NgaySinh"];
-            this.gioiTinh = row["GioiTinh"].ToString();
-            this.quanHe = row["QuanHe"].ToString();
+            // Map tên chính xác với trong SQL server
+            Int32.TryParse(row["MANV"].ToString(), out this.maNV);
+            this.hoTenThanNhan = row["HOTENTN"].ToString();
+            this.ngaySinh = (DateTime)row["NGSINH"];
+            this.gioiTinh = row["GIOITINH"].ToString();
+            this.quanHe = row["QUANHE"].ToString();
         }
     }
 }

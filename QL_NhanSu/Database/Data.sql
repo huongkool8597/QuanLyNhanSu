@@ -214,7 +214,7 @@ CREATE PROCEDURE SP_ThanNhan_DELETE
 AS
 BEGIN
 	DELETE THANNHAN 
-	WHERE MANV = @MANV AND HOTENTN LIKE @HOTENTN
+	WHERE (MANV = @MANV) AND (HOTENTN LIKE N'%' + @HOTENTN + '%')
 END
 GO
 -- Tạo PROCEDRUE Search
@@ -250,10 +250,12 @@ GO
 
 [dbo].[SP_ThanNhan_INSERT] 3, N'Võ Thị Thanh Thảo', N'Nữ', '19791201', N'Mẹ'
 GO
-[dbo].[SP_ThanNhan_INSERT] 3, N'Nguyễn Xuân Bình', N'Nữ', '19781102', N'Bố'
+[dbo].[SP_ThanNhan_INSERT] 4, N'Nguyễn Xuân Bình', N'Nữ', '19781102', N'Bố'
 GO
-[dbo].[SP_ThanNhan_INSERT] 3, N'Lê Thị Mai', N'Nữ', '19981102', N'Vợ'
+[dbo].[SP_ThanNhan_INSERT] 1005, N'Nam', N'Nam', '19981102', N'Con'
 GO
+
+
 -------------------------------Tăng ca----------------------------------------
 ALTER TABLE dbo.LAMTHEM ADD GhiChu NVARCHAR(100)
 ALTER TABLE dbo.LAMTHEM ADD MaTangCa INT IDENTITY PRIMARY KEY
@@ -322,6 +324,7 @@ BEGIN
 	OR SOBUOI LIKE N'%' + @search + '%' OR TONGTIEN LIKE N'%' + @search + '%' OR DONGIA LIKE N'%' + @search + '%'
 END
 GO
+
 
 -------------------------------------------Dự Án------------------------------------------------------
 ALTER PROC USP_GetDSDA 
@@ -464,3 +467,4 @@ END
 GO
 
 USP_GetDSDA
+
