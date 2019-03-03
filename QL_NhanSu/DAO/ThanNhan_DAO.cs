@@ -25,12 +25,19 @@ namespace QL_NhanSu.DAO
         public List<ThanNhan_DTO> GetAllThanNhan()
         {
             List<ThanNhan_DTO> list = new List<ThanNhan_DTO>();
-            DataTable data = DataProvider.Instance.ExecuteQuery("[dbo].[SP_ThanNhan_GETALL]");
-            foreach (DataRow item in data.Rows)
+            try
             {
-                ThanNhan_DTO thanNhan = new ThanNhan_DTO(item);
-                list.Add(thanNhan);
+                DataTable data = DataProvider.Instance.ExecuteQuery("[dbo].[SP_ThanNhan_GETALL]");
+                foreach (DataRow item in data.Rows)
+                {
+                    ThanNhan_DTO thanNhan = new ThanNhan_DTO(item);
+                    list.Add(thanNhan);
+                }
+            } catch (Exception e)
+            {
+                Console.WriteLine(e);
             }
+            
             return list;
 
         }
@@ -42,13 +49,22 @@ namespace QL_NhanSu.DAO
         public List<MaNV_DTO> GetListMaNhanVien()
         {
             List<MaNV_DTO> maNhanVienList = new List<MaNV_DTO>();
-            DataTable data = DataProvider.Instance.ExecuteQuery("SELECT MANV FROM dbo.NHANVIEN");
 
-            foreach (DataRow item in data.Rows)
+
+            try
             {
-                MaNV_DTO ma = new MaNV_DTO(item);
-                maNhanVienList.Add(ma);
+                DataTable data = DataProvider.Instance.ExecuteQuery("SELECT MANV FROM dbo.NHANVIEN");
+                foreach (DataRow item in data.Rows)
+                {
+                    MaNV_DTO ma = new MaNV_DTO(item);
+                    maNhanVienList.Add(ma);
+                }
             }
+            catch (Exception e)
+            {
+                Console.WriteLine("Load ma nhan vien loi. Thu lai!", e);
+            }
+
             return maNhanVienList;
         }
 
@@ -63,7 +79,7 @@ namespace QL_NhanSu.DAO
         /// <returns>True nếu insert thành công, False nếu insert không thành công</returns>
         public bool InsertThanNhan(int manv, string hoTenThanNhan, DateTime ngsinh, string gioitinh, string quanHe)
         {
-            int result = DataProvider.Instance.ExecuteNonQuery(" EXEC [dbo].[SP_ThanNhan_INSERT] @MANV , @HOTENTN , @GIOITINH , @NGSINH , @QUANHE , @quanHe ", new object[] { manv, hoTenThanNhan, gioitinh, ngsinh, quanHe });
+            int result = DataProvider.Instance.ExecuteNonQuery(" EXEC [dbo].[SP_ThanNhan_INSERT] @MANV , @HOTENTN , @GIOITINH , @NGSINH , @QUANHE ", new object[] { manv, hoTenThanNhan, gioitinh, ngsinh, quanHe });
 
             return result > 0;
         }
@@ -92,7 +108,7 @@ namespace QL_NhanSu.DAO
         /// <returns>True nếu thành công, False nếu thất bại</returns>
         public bool DeleteThanNhan(int manv, string hoTenThanNhan)
         {
-            int result = DataProvider.Instance.ExecuteNonQuery(" EXEC SP_ThanNhan_DELETE @MANV @HOTENTN ", new object[] { manv, hoTenThanNhan });
+            int result = DataProvider.Instance.ExecuteNonQuery("EXEC SP_ThanNhan_DELETE @MANV , @HOTENTN ", new object[] { manv, hoTenThanNhan });
 
             return result > 0;
         }

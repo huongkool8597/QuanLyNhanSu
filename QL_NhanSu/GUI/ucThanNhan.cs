@@ -40,8 +40,14 @@ namespace QL_NhanSu.GUI
         /// </summary>
         private void LoadListThanNhan ()
         {
-            
-            thanNhanList.DataSource = ThanNhan_DAO.Instance.GetAllThanNhan();
+            try {
+                thanNhanList.DataSource = ThanNhan_DAO.Instance.GetAllThanNhan();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Không tìm thấy danh sách thân nhân. Vui lòng khởi động lại!");
+                Console.WriteLine(err);
+            }
         }
 
         /// <summary>
@@ -61,8 +67,16 @@ namespace QL_NhanSu.GUI
         /// </summary>
         private void LoadIntoComBoBoxMaNhanVien()
         {
-            cboMaNhanVien.DataSource = ThanNhan_DAO.Instance.GetListMaNhanVien();
-            cboMaNhanVien.DisplayMember = "MANV";
+            try
+            {
+                cboMaNhanVien.DataSource = ThanNhan_DAO.Instance.GetListMaNhanVien();
+                cboMaNhanVien.DisplayMember = "MANV";
+            } catch (Exception err)
+            {
+                MessageBox.Show("Không tìm thấy list mã nhân viên để load ra Combobox. Vui lòng thử lại");
+                Console.WriteLine(err);
+            }
+            
         }
 
         /// <summary>
@@ -89,6 +103,7 @@ namespace QL_NhanSu.GUI
             radNu.CheckedChanged += (s, args) => radNam.Checked = !radNu.Checked;
         }
         ////////////////////////////// HANDLE EVENT OF BUTTON ////////////////////////////// 
+        
         private void btnBack_Click(object sender, EventArgs e)
         {
             ucMenu ucMenu = new ucMenu();
@@ -105,7 +120,11 @@ namespace QL_NhanSu.GUI
         {
 
         }
-
+        /// <summary>
+        /// Làm mới
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
             LoadListThanNhan();
@@ -142,10 +161,64 @@ namespace QL_NhanSu.GUI
                     LoadFirstTime();
                 } catch (Exception error)
                 {
-                    // MessageBox.Show("Có lỗi khi xóa thân nhân! Vui lòng thử lại.");
+                   // MessageBox.Show("Có lỗi khi xóa thân nhân! Vui lòng thử lại.");
                     Console.WriteLine(error);
-
                 }
+            }
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            int maNV;
+            string hoTenThanNhan, gioiTinh, quanHe;
+            DateTime ngaySinh;
+            
+            try
+            {
+
+                Int32.TryParse(cboMaNhanVien.Text, out maNV);
+                hoTenThanNhan = txtHoTenThanNhan.Text;
+                gioiTinh = radNam.Checked ? "Nam" : "Nữ";
+                quanHe = txtQuanHe.Text;
+                DateTime.TryParse(dtpNgaySinh.Text, out ngaySinh);
+                MessageBox.Show("Bạn có muốn thêm thân nhân : "+ hoTenThanNhan);
+
+                ThanNhan_DAO.Instance.InsertThanNhan(maNV, hoTenThanNhan, ngaySinh, gioiTinh, quanHe);
+                MessageBox.Show("Thêm thành công");
+                LoadFirstTime();
+
+            }  catch (Exception err)
+            {
+                //// MessageBox.Show("Có lỗi khi thêm thân nhân! Vui lòng thử lại.");
+                Console.WriteLine(err);
+            }
+
+        }
+
+        private void btnCapNhat_Click(object sender, EventArgs e)
+        {
+            int maNV;
+            string hoTenThanNhan, gioiTinh, quanHe;
+            DateTime ngaySinh;
+            try
+            {
+
+                Int32.TryParse(cboMaNhanVien.Text, out maNV);
+                hoTenThanNhan = txtHoTenThanNhan.Text;
+                gioiTinh = radNam.Checked ? "Nam" : "Nữ";
+                quanHe = txtQuanHe.Text;
+                DateTime.TryParse(dtpNgaySinh.Text, out ngaySinh);
+                MessageBox.Show("Bạn có muốn cập nhật thân nhân : " + hoTenThanNhan);
+
+                ThanNhan_DAO.Instance.UpdateThanNhan(maNV, hoTenThanNhan, ngaySinh, gioiTinh, quanHe);
+                MessageBox.Show("Cập nhật thành công");
+                LoadFirstTime();
+
+            }
+            catch (Exception err)
+            {
+                //// MessageBox.Show("Có lỗi khi thêm thân nhân! Vui lòng thử lại.");
+                Console.WriteLine(err);
             }
         }
     }
