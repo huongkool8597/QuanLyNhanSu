@@ -168,6 +168,7 @@ CREATE PROC USP_DeleteNv
 @manv INT
 AS
 BEGIN
+	DELETE dbo.THANNHAN WHERE MANV = @manv
 	DELETE dbo.NHANVIEN WHERE MANV=@manv
 END
 GO
@@ -214,7 +215,7 @@ CREATE PROCEDURE SP_ThanNhan_DELETE
 AS
 BEGIN
 	DELETE THANNHAN 
-	WHERE (MANV = @MANV) AND (HOTENTN LIKE N'%' + @HOTENTN + '%')
+	WHERE MANV = @MANV AND HOTENTN LIKE @HOTENTN
 END
 GO
 -- Tạo PROCEDRUE Search
@@ -250,12 +251,10 @@ GO
 
 [dbo].[SP_ThanNhan_INSERT] 3, N'Võ Thị Thanh Thảo', N'Nữ', '19791201', N'Mẹ'
 GO
-[dbo].[SP_ThanNhan_INSERT] 4, N'Nguyễn Xuân Bình', N'Nữ', '19781102', N'Bố'
+[dbo].[SP_ThanNhan_INSERT] 3, N'Nguyễn Xuân Bình', N'Nữ', '19781102', N'Bố'
 GO
-[dbo].[SP_ThanNhan_INSERT] 1005, N'Nam', N'Nam', '19981102', N'Con'
+[dbo].[SP_ThanNhan_INSERT] 3, N'Lê Thị Mai', N'Nữ', '19981102', N'Vợ'
 GO
-
-
 -------------------------------Tăng ca----------------------------------------
 ALTER TABLE dbo.LAMTHEM ADD GhiChu NVARCHAR(100)
 ALTER TABLE dbo.LAMTHEM ADD MaTangCa INT IDENTITY PRIMARY KEY
@@ -324,7 +323,6 @@ BEGIN
 	OR SOBUOI LIKE N'%' + @search + '%' OR TONGTIEN LIKE N'%' + @search + '%' OR DONGIA LIKE N'%' + @search + '%'
 END
 GO
-
 
 -------------------------------------------Dự Án------------------------------------------------------
 ALTER PROC USP_GetDSDA 
@@ -468,3 +466,67 @@ GO
 
 USP_GetDSDA
 
+--------------------------------------------------------------TRẢ LƯƠNG---------------------------------------------------------
+INSERT dbo.TRALUONG
+        ( MANV, LUONG, NGNHAN )
+VALUES  ( 60, -- MANV - int
+          100000, -- LUONG - int
+          GETDATE()  -- NGNHAN - date
+          )
+GO
+          
+CREATE PROC USP_GetTraLuong
+AS
+BEGIN
+	SELECT dbo.TRALUONG.MANV,dbo.NHANVIEN.HOTEN,dbo.TRALUONG.LUONG,dbo.TRALUONG.NGNHAN,dbo.TRALUONG.MATL FROM dbo.TRALUONG,dbo.NHANVIEN WHERE NHANVIEN.MANV=dbo.TRALUONG.MANV
+END
+GO
+CREATE PROC USP_InsertTL
+@manv INT,
+@ngaynhan DATE
+AS
+BEGIN
+	DECLARE @luong INT,@matc INT,@luongcb INT
+	SELECT @luongcb=TONGTIEN FROM dbo.LAMTHEM WHERE MANV = @manv AND GhiChu IS NULL
+	IF @luongcb IS NULL SET @luongcb=0
+	SET @luong = (SELECT LUONG FROM dbo.NHANVIEN WHERE MANV=@manv) + @luongcb
+	SELECT @matc=MaTangCa FROM dbo.LAMTHEM WHERE MANV = @manv AND GhiChu IS NULL
+	INSERT dbo.TRALUONG
+	        ( MANV, LUONG, NGNHAN )
+	VALUES  ( @manv, -- MANV - int
+	          @luong, -- LUONG - int
+	          @ngaynhan  -- NGNHAN - date
+	          )
+	UPDATE dbo.LAMTHEM SET GhiChu=N'Đã thanh toán' WHERE MaTangCa=@matc
+END
+GO
+
+ALTER TABLE dbo.TRALUONG ADD MATL INT IDENTITY PRIMARY KEY
+GO
+
+CREATE PROC USP_UpdateTL
+@matt INT,
+@manv INT,
+@ngaynhan DATE
+AS
+BEGIN
+	UPDATE dbo.TRALUONG SET MANV=@manv,NGNHAN=@ngaynhan WHERE MATL=@matt
+END
+GO
+
+CREATE PROC USP_DeleteTL
+@matt INT
+AS
+BEGIN
+	DELETE FROM dbo.TRALUONG WHERE MATL=@matt
+END
+GO
+CREATE PROC USP_SearchTL
+@search NVARCHAR(100)
+AS
+BEGIN
+	SELECT dbo.TRALUONG.MANV,dbo.NHANVIEN.HOTEN,dbo.TRALUONG.LUONG,dbo.TRALUONG.NGNHAN,dbo.TRALUONG.MATL 
+	FROM dbo.TRALUONG,dbo.NHANVIEN 
+	WHERE NHANVIEN.MANV=dbo.TRALUONG.MANV AND ( NHANVIEN.MANV LIKE N'%' + @search + '%' OR HOTEN LIKE N'%' + @search + '%'OR 
+	dbo.TRALUONG.LUONG LIKE N'%' + @search + '%' OR NGNHAN LIKE N'%' + @search + '%' )
+END

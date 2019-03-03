@@ -18,10 +18,10 @@ namespace QL_NhanSu.GUI
         public ucNhanVien()
         {
             InitializeComponent();
-            LoadFirstTime();
+            Load();
         }
 
-        void LoadFirstTime()
+        void Load()
         {
             dgvNhanVien.DataSource = NvList;
             LoadListNV();
