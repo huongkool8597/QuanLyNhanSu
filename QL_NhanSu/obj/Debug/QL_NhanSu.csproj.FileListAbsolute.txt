@@ -68,7 +68,6 @@ D:\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.pdb
 D:\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\bin\Debug\MetroFramework.Design.dll
 D:\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\bin\Debug\MetroFramework.dll
 D:\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\bin\Debug\MetroFramework.Fonts.dll
-D:\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csprojAssemblyReference.cache
 D:\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.frmMain.resources
 D:\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.GUI.ucDuAn.resources
 D:\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.GUI.ucMenu.resources
@@ -160,3 +159,4 @@ C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.exe.c
 C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.exe
 C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.pdb
 C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csproj.CopyComplete
+D:\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csprojAssemblyReference.cache

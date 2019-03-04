@@ -50,13 +50,13 @@
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
+            this.dtpNgaySinh = new MetroFramework.Controls.MetroDateTime();
             this.label1 = new System.Windows.Forms.Label();
             this.txtQuanHe = new System.Windows.Forms.TextBox();
             this.radNu = new MetroFramework.Controls.MetroRadioButton();
             this.radNam = new MetroFramework.Controls.MetroRadioButton();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.dtpNgaySinh = new MetroFramework.Controls.MetroDateTime();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -147,7 +147,7 @@
             // btnHuy
             // 
             this.btnHuy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(106)))));
-            this.btnHuy.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnHuy.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHuy.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnHuy.Location = new System.Drawing.Point(1072, 14);
             this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
@@ -163,7 +163,7 @@
             // btnCapNhat
             // 
             this.btnCapNhat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(106)))));
-            this.btnCapNhat.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnCapNhat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCapNhat.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnCapNhat.Location = new System.Drawing.Point(727, 14);
             this.btnCapNhat.Margin = new System.Windows.Forms.Padding(4);
@@ -179,7 +179,7 @@
             // btnXoa
             // 
             this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(106)))));
-            this.btnXoa.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoa.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnXoa.Location = new System.Drawing.Point(894, 14);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
@@ -195,7 +195,7 @@
             // btnThem
             // 
             this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(106)))));
-            this.btnThem.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThem.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnThem.Location = new System.Drawing.Point(573, 14);
             this.btnThem.Margin = new System.Windows.Forms.Padding(4);
@@ -287,7 +287,7 @@
             // btnLamMoi
             // 
             this.btnLamMoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(106)))));
-            this.btnLamMoi.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnLamMoi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLamMoi.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnLamMoi.Location = new System.Drawing.Point(419, 14);
             this.btnLamMoi.Margin = new System.Windows.Forms.Padding(4);
@@ -389,6 +389,14 @@
             this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel2.VerticalScrollbarSize = 13;
             // 
+            // dtpNgaySinh
+            // 
+            this.dtpNgaySinh.Location = new System.Drawing.Point(801, 106);
+            this.dtpNgaySinh.MinimumSize = new System.Drawing.Size(0, 30);
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(257, 30);
+            this.dtpNgaySinh.TabIndex = 11;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -462,14 +470,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1248, 86);
             this.tableLayoutPanel1.TabIndex = 14;
-            // 
-            // dtpNgaySinh
-            // 
-            this.dtpNgaySinh.Location = new System.Drawing.Point(801, 106);
-            this.dtpNgaySinh.MinimumSize = new System.Drawing.Size(0, 30);
-            this.dtpNgaySinh.Name = "dtpNgaySinh";
-            this.dtpNgaySinh.Size = new System.Drawing.Size(257, 30);
-            this.dtpNgaySinh.TabIndex = 11;
             // 
             // ucThanNhan
             // 

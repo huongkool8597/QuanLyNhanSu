@@ -70,7 +70,7 @@ namespace QL_NhanSu.GUI
             ucMenu.Dock = DockStyle.Fill;
             frmMain.FrmMain.MetroContainer.Controls.Add(ucMenu);
             frmMain.FrmMain.MetroContainer.Controls["ucMenu"].BringToFront();
-            foreach (ucNhanVien uc in frmMain.FrmMain.MetroContainer.Controls.OfType<ucNhanVien>())
+            foreach (ucDuAn uc in frmMain.FrmMain.MetroContainer.Controls.OfType<ucDuAn>())
             {
                 frmMain.FrmMain.MetroContainer.Controls.Remove(uc);
             }
