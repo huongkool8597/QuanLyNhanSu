@@ -167,7 +167,7 @@ namespace QL_NhanSu.GUI
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn có thật sự muốn xóa nhân viên có tên là: " + txtHoTen.Text, "Thông báo", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+            if (MessageBox.Show("Bạn có thật sự muốn xóa nhân viên có mã là: " + txtHoTen.Text, "Thông báo", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
             {
                 int maNV;
                 Int32.TryParse(lblMaNV.Text, out maNV);

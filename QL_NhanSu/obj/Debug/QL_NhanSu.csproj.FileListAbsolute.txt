@@ -122,6 +122,7 @@ E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csproj.CoreCompile
 E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csproj.CopyComplete
 E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.exe
 E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.pdb
+
 D:\Bài giảng năm 3 kỳ 2\TT Nhóm\QLNSu\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csprojAssemblyReference.cache
 D:\Bài giảng năm 3 kỳ 2\TT Nhóm\QLNSu\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.frmMain.resources
 D:\Bài giảng năm 3 kỳ 2\TT Nhóm\QLNSu\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.GUI.ucDuAn.resources
@@ -141,3 +142,24 @@ D:\Bài giảng năm 3 kỳ 2\TT Nhóm\QLNSu\QuanLyNhanSu\QL_NhanSu\bin\Debug\QL
 D:\Bài giảng năm 3 kỳ 2\TT Nhóm\QLNSu\QuanLyNhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.exe
 D:\Bài giảng năm 3 kỳ 2\TT Nhóm\QLNSu\QuanLyNhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.pdb
 D:\Bài giảng năm 3 kỳ 2\TT Nhóm\QLNSu\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csproj.CopyComplete
+
+C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.frmMain.resources
+C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.GUI.ucDuAn.resources
+C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.GUI.ucMenu.resources
+C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.GUI.ucNhanVien.resources
+C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.GUI.ucPhanCong.resources
+C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.GUI.ucPhongBan.resources
+C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.GUI.ucTangCa.resources
+C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.GUI.ucThanNhan.resources
+C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.GUI.ucTraLuong.resources
+C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.Properties.Resources.resources
+C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.exe
+C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.pdb
+C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.exe.config
+C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.exe
+C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.pdb
+C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csproj.CopyComplete
+
