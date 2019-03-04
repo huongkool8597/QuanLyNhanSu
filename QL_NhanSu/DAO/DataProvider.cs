@@ -44,7 +44,7 @@ namespace QL_NhanSu.DAO
                 }
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
                 adapter.Fill(data);
-                connection.Close();
+                connection.Close(); 
 
             }
             return data;
