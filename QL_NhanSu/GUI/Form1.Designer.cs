@@ -40,7 +40,7 @@
             this.mPanelMain.Location = new System.Drawing.Point(20, 60);
             this.mPanelMain.Margin = new System.Windows.Forms.Padding(4);
             this.mPanelMain.Name = "mPanelMain";
-            this.mPanelMain.Size = new System.Drawing.Size(927, 400);
+            this.mPanelMain.Size = new System.Drawing.Size(1131, 524);
             this.mPanelMain.TabIndex = 1;
             this.mPanelMain.VerticalScrollbarBarColor = true;
             this.mPanelMain.VerticalScrollbarHighlightOnWheel = false;
@@ -50,11 +50,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(967, 480);
+            this.ClientSize = new System.Drawing.Size(1171, 604);
             this.Controls.Add(this.mPanelMain);
             this.MaximizeBox = false;
             this.Name = "frmMain";
-            this.Text = "Form1";
+            this.Text = "Chương trình quản lý nhân sự";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.ResumeLayout(false);
