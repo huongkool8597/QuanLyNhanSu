@@ -55,6 +55,11 @@ namespace QL_NhanSu
             _frmMain.MetroContainer.Controls.Add(ucMenu);
             _frmMain.MetroContainer.Controls["ucMenu"].BringToFront();
         }
+
+        private void mPanelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 
