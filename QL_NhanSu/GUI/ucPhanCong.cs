@@ -91,7 +91,7 @@ namespace QL_NhanSu.GUI
                     Int32.TryParse(cboMaNhanVien.Text, out MaNV);
                     int SOGIO;
                     Int32.TryParse(txtSoGio.Text, out SOGIO);
-                    if (PhanCongDAO.Instance.InsertPHANCONG(MaNV, MaDA, SOGIO))
+                    if (PhanCongDAO.Instance.InsertPHANCONG(MaDA, MaNV, SOGIO))
                     {
                         MessageBox.Show("Thêm thông tin bảng phân công thành công! ");
                         LoadListPhanCong();
@@ -120,7 +120,7 @@ namespace QL_NhanSu.GUI
                     Int32.TryParse(cboMaNhanVien.Text, out MaNV);
                     int SOGIO;
                     Int32.TryParse(txtSoGio.Text, out SOGIO);
-                    if (PhanCongDAO.Instance.InsertPHANCONG(MaNV, MaDA, SOGIO))
+                    if (PhanCongDAO.Instance.UpdatePHANCONG(MaDA, MaNV, SOGIO))
                     {
                         MessageBox.Show("Sửa thông tin thành công! ");
                         LoadListPhanCong();

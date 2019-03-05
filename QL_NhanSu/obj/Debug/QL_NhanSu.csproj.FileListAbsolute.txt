@@ -103,7 +103,6 @@ E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csproj.CoreCompile
 E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csproj.CopyComplete
 E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.exe
 E:\TTNhom\Git_QLNS\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.pdb
-C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csprojAssemblyReference.cache
 C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.frmMain.resources
 C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.GUI.ucDuAn.resources
 C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.GUI.ucMenu.resources
@@ -122,3 +121,4 @@ C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.exe.c
 C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.exe
 C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.pdb
 C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csproj.CopyComplete
+C:\Users\admin\Desktop\TT_Nhóm\QuanLyNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csprojAssemblyReference.cache
