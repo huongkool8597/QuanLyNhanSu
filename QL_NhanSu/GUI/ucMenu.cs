@@ -77,7 +77,7 @@ namespace QL_NhanSu.GUI
         private void btnHuongDan_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process prc = new System.Diagnostics.Process();
-            prc.StartInfo.FileName = @"D:\VS_2017\QLKTX\QLKTX\HuongDan.txt";
+            prc.StartInfo.FileName = @".\HuongDan.txt";
             prc.Start();
         }
     }
