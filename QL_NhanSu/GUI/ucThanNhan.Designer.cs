@@ -142,7 +142,7 @@
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(301, 42);
-            this.txtSearch.TabIndex = 13;
+            this.txtSearch.TabIndex = 11;
             // 
             // btnHuy
             // 
@@ -153,7 +153,7 @@
             this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(137, 43);
-            this.btnHuy.TabIndex = 12;
+            this.btnHuy.TabIndex = 10;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseCustomBackColor = true;
             this.btnHuy.UseCustomForeColor = true;
@@ -169,7 +169,7 @@
             this.btnCapNhat.Margin = new System.Windows.Forms.Padding(4);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(137, 43);
-            this.btnCapNhat.TabIndex = 10;
+            this.btnCapNhat.TabIndex = 8;
             this.btnCapNhat.Text = "Cập nhật";
             this.btnCapNhat.UseCustomBackColor = true;
             this.btnCapNhat.UseCustomForeColor = true;
@@ -185,7 +185,7 @@
             this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(137, 43);
-            this.btnXoa.TabIndex = 11;
+            this.btnXoa.TabIndex = 9;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseCustomBackColor = true;
             this.btnXoa.UseCustomForeColor = true;
@@ -201,7 +201,7 @@
             this.btnThem.Margin = new System.Windows.Forms.Padding(4);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(137, 43);
-            this.btnThem.TabIndex = 9;
+            this.btnThem.TabIndex = 7;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseCustomBackColor = true;
             this.btnThem.UseCustomForeColor = true;
@@ -253,7 +253,7 @@
             this.dgvThanNhan.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvThanNhan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvThanNhan.Size = new System.Drawing.Size(1248, 408);
-            this.dgvThanNhan.TabIndex = 16;
+            this.dgvThanNhan.TabIndex = 13;
             this.dgvThanNhan.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvThanNhan_CellContentClick);
             // 
             // metroPanel4
@@ -293,7 +293,7 @@
             this.btnLamMoi.Margin = new System.Windows.Forms.Padding(4);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(137, 43);
-            this.btnLamMoi.TabIndex = 14;
+            this.btnLamMoi.TabIndex = 12;
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.UseCustomBackColor = true;
             this.btnLamMoi.UseCustomForeColor = true;
@@ -306,7 +306,7 @@
             this.txtHoTenThanNhan.Margin = new System.Windows.Forms.Padding(4);
             this.txtHoTenThanNhan.Name = "txtHoTenThanNhan";
             this.txtHoTenThanNhan.Size = new System.Drawing.Size(313, 22);
-            this.txtHoTenThanNhan.TabIndex = 5;
+            this.txtHoTenThanNhan.TabIndex = 2;
             // 
             // cboMaNhanVien
             // 
@@ -316,7 +316,7 @@
             this.cboMaNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.cboMaNhanVien.Name = "cboMaNhanVien";
             this.cboMaNhanVien.Size = new System.Drawing.Size(313, 30);
-            this.cboMaNhanVien.TabIndex = 4;
+            this.cboMaNhanVien.TabIndex = 1;
             this.cboMaNhanVien.UseSelectable = true;
             // 
             // metroLabel5
@@ -395,7 +395,7 @@
             this.dtpNgaySinh.MinimumSize = new System.Drawing.Size(0, 30);
             this.dtpNgaySinh.Name = "dtpNgaySinh";
             this.dtpNgaySinh.Size = new System.Drawing.Size(257, 30);
-            this.dtpNgaySinh.TabIndex = 11;
+            this.dtpNgaySinh.TabIndex = 6;
             // 
             // label1
             // 
@@ -412,7 +412,7 @@
             this.txtQuanHe.Margin = new System.Windows.Forms.Padding(4);
             this.txtQuanHe.Name = "txtQuanHe";
             this.txtQuanHe.Size = new System.Drawing.Size(313, 22);
-            this.txtQuanHe.TabIndex = 8;
+            this.txtQuanHe.TabIndex = 3;
             // 
             // radNu
             // 
@@ -421,7 +421,7 @@
             this.radNu.Margin = new System.Windows.Forms.Padding(4);
             this.radNu.Name = "radNu";
             this.radNu.Size = new System.Drawing.Size(42, 17);
-            this.radNu.TabIndex = 7;
+            this.radNu.TabIndex = 5;
             this.radNu.Text = "Nữ";
             this.radNu.UseCustomBackColor = true;
             this.radNu.UseCustomForeColor = true;
@@ -434,7 +434,7 @@
             this.radNam.Margin = new System.Windows.Forms.Padding(4);
             this.radNam.Name = "radNam";
             this.radNam.Size = new System.Drawing.Size(52, 17);
-            this.radNam.TabIndex = 6;
+            this.radNam.TabIndex = 4;
             this.radNam.Text = "Nam";
             this.radNam.UseCustomBackColor = true;
             this.radNam.UseCustomForeColor = true;

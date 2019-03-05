@@ -108,7 +108,7 @@
             this.dgvPhongBan.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvPhongBan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPhongBan.Size = new System.Drawing.Size(1408, 393);
-            this.dgvPhongBan.TabIndex = 8;
+            this.dgvPhongBan.TabIndex = 24;
             // 
             // metroPanel4
             // 
@@ -156,6 +156,7 @@
             // 
             // btnsearch
             // 
+            this.btnsearch.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnsearch.Image = global::QL_NhanSu.Properties.Resources.search;
             this.btnsearch.Location = new System.Drawing.Point(352, 14);
             this.btnsearch.Margin = new System.Windows.Forms.Padding(4);
@@ -163,7 +164,6 @@
             this.btnsearch.Size = new System.Drawing.Size(43, 39);
             this.btnsearch.TabIndex = 22;
             this.btnsearch.TabStop = false;
-            this.btnsearch.UseWaitCursor = true;
             this.btnsearch.Click += new System.EventHandler(this.ptnsearch_Click);
             // 
             // txtSearch
@@ -174,7 +174,6 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(301, 42);
             this.txtSearch.TabIndex = 8;
-            this.txtSearch.UseWaitCursor = true;
             // 
             // btnHuy
             // 
@@ -275,17 +274,16 @@
             this.txtTenPB.Name = "txtTenPB";
             this.txtTenPB.Size = new System.Drawing.Size(313, 22);
             this.txtTenPB.TabIndex = 1;
-            this.txtTenPB.UseWaitCursor = true;
             // 
             // dtpNgNhanChuc
             // 
+            this.dtpNgNhanChuc.Cursor = System.Windows.Forms.Cursors.Default;
             this.dtpNgNhanChuc.Location = new System.Drawing.Point(867, 107);
             this.dtpNgNhanChuc.Margin = new System.Windows.Forms.Padding(4);
             this.dtpNgNhanChuc.MinimumSize = new System.Drawing.Size(0, 30);
             this.dtpNgNhanChuc.Name = "dtpNgNhanChuc";
             this.dtpNgNhanChuc.Size = new System.Drawing.Size(311, 30);
             this.dtpNgNhanChuc.TabIndex = 3;
-            this.dtpNgNhanChuc.UseWaitCursor = true;
             // 
             // cboTruongPhong
             // 
@@ -297,11 +295,11 @@
             this.cboTruongPhong.Size = new System.Drawing.Size(311, 30);
             this.cboTruongPhong.TabIndex = 2;
             this.cboTruongPhong.UseSelectable = true;
-            this.cboTruongPhong.UseWaitCursor = true;
             // 
             // lblMaPB
             // 
             this.lblMaPB.AutoSize = true;
+            this.lblMaPB.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblMaPB.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.lblMaPB.Location = new System.Drawing.Point(325, 36);
             this.lblMaPB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -311,7 +309,6 @@
             this.lblMaPB.Text = "007";
             this.lblMaPB.UseCustomBackColor = true;
             this.lblMaPB.UseCustomForeColor = true;
-            this.lblMaPB.UseWaitCursor = true;
             // 
             // metroLabel5
             // 
@@ -325,7 +322,6 @@
             this.metroLabel5.Text = "Ngày Nhận Chức";
             this.metroLabel5.UseCustomBackColor = true;
             this.metroLabel5.UseCustomForeColor = true;
-            this.metroLabel5.UseWaitCursor = true;
             // 
             // metroLabel4
             // 
@@ -339,7 +335,6 @@
             this.metroLabel4.Text = "Trưởng Phòng:";
             this.metroLabel4.UseCustomBackColor = true;
             this.metroLabel4.UseCustomForeColor = true;
-            this.metroLabel4.UseWaitCursor = true;
             // 
             // metroLabel3
             // 
@@ -353,7 +348,6 @@
             this.metroLabel3.Text = "Tên Phòng Ban:";
             this.metroLabel3.UseCustomBackColor = true;
             this.metroLabel3.UseCustomForeColor = true;
-            this.metroLabel3.UseWaitCursor = true;
             // 
             // metroLabel2
             // 
@@ -367,7 +361,6 @@
             this.metroLabel2.Text = "Mã Phòng Ban:";
             this.metroLabel2.UseCustomBackColor = true;
             this.metroLabel2.UseCustomForeColor = true;
-            this.metroLabel2.UseWaitCursor = true;
             // 
             // tableLayoutPanel1
             // 

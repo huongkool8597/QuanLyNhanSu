@@ -123,12 +123,14 @@ namespace QL_NhanSu.GUI
                 }
                 else
                 {
+                    int maPB;
+                    Int32.TryParse(lblMaPB.Text, out maPB);
                     string TenPB = txtTenPB.Text;
                     DateTime ngnhanchuc;
                     DateTime.TryParse(dtpNgNhanChuc.Text, out ngnhanchuc);
                     int maTB;
                     Int32.TryParse(cboTruongPhong.Text, out maTB);
-                    if (PhongBanDAO.Instance.InsertPB(TenPB, maTB, ngnhanchuc))
+                    if (PhongBanDAO.Instance.UpdateNv(maPB,TenPB, maTB, ngnhanchuc))
                     {
                         MessageBox.Show("Cập Nhậy Phòng Ban thành công! ");
                         LoadListPB();
