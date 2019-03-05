@@ -45,19 +45,18 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.2963F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.7037F));
             this.tableLayoutPanel1.Controls.Add(this.metroPanel1, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1024, 711);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(768, 578);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // metroPanel1
@@ -73,24 +72,24 @@
             this.metroPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 12;
-            this.metroPanel1.Location = new System.Drawing.Point(76, 12);
-            this.metroPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.metroPanel1.HorizontalScrollbarSize = 10;
+            this.metroPanel1.Location = new System.Drawing.Point(52, 10);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(872, 686);
+            this.metroPanel1.Size = new System.Drawing.Size(654, 557);
             this.metroPanel1.TabIndex = 0;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 13;
+            this.metroPanel1.VerticalScrollbarSize = 10;
             // 
             // btnHuongDan
             // 
             this.btnHuongDan.ActiveControl = null;
             this.btnHuongDan.BackColor = System.Drawing.Color.Teal;
             this.btnHuongDan.ForeColor = System.Drawing.Color.White;
-            this.btnHuongDan.Location = new System.Drawing.Point(595, 451);
+            this.btnHuongDan.Location = new System.Drawing.Point(446, 366);
+            this.btnHuongDan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnHuongDan.Name = "btnHuongDan";
-            this.btnHuongDan.Size = new System.Drawing.Size(246, 164);
+            this.btnHuongDan.Size = new System.Drawing.Size(184, 133);
             this.btnHuongDan.TabIndex = 6;
             this.btnHuongDan.Tag = "";
             this.btnHuongDan.Text = "Hướng dẫn";
@@ -110,9 +109,10 @@
             this.btnTraLuong.ActiveControl = null;
             this.btnTraLuong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnTraLuong.ForeColor = System.Drawing.Color.White;
-            this.btnTraLuong.Location = new System.Drawing.Point(43, 451);
+            this.btnTraLuong.Location = new System.Drawing.Point(32, 366);
+            this.btnTraLuong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTraLuong.Name = "btnTraLuong";
-            this.btnTraLuong.Size = new System.Drawing.Size(518, 164);
+            this.btnTraLuong.Size = new System.Drawing.Size(388, 133);
             this.btnTraLuong.TabIndex = 4;
             this.btnTraLuong.Tag = "ucTraLuong";
             this.btnTraLuong.Text = "Thanh toán lương";
@@ -132,10 +132,9 @@
             this.btnTangCa.ActiveControl = null;
             this.btnTangCa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnTangCa.ForeColor = System.Drawing.Color.White;
-            this.btnTangCa.Location = new System.Drawing.Point(595, 259);
-            this.btnTangCa.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTangCa.Location = new System.Drawing.Point(446, 210);
             this.btnTangCa.Name = "btnTangCa";
-            this.btnTangCa.Size = new System.Drawing.Size(246, 164);
+            this.btnTangCa.Size = new System.Drawing.Size(184, 133);
             this.btnTangCa.TabIndex = 3;
             this.btnTangCa.Tag = "ucTangCa";
             this.btnTangCa.Text = "Làm tăng ca";
@@ -155,10 +154,9 @@
             this.btnPhongBan.ActiveControl = null;
             this.btnPhongBan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(53)))), ((int)(((byte)(174)))));
             this.btnPhongBan.ForeColor = System.Drawing.Color.White;
-            this.btnPhongBan.Location = new System.Drawing.Point(315, 70);
-            this.btnPhongBan.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPhongBan.Location = new System.Drawing.Point(236, 57);
             this.btnPhongBan.Name = "btnPhongBan";
-            this.btnPhongBan.Size = new System.Drawing.Size(246, 164);
+            this.btnPhongBan.Size = new System.Drawing.Size(184, 133);
             this.btnPhongBan.TabIndex = 2;
             this.btnPhongBan.Tag = "ucPhongBan";
             this.btnPhongBan.Text = "Phòng Ban";
@@ -178,10 +176,9 @@
             this.btnPhanCong.ActiveControl = null;
             this.btnPhanCong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(85)))), ((int)(((byte)(45)))));
             this.btnPhanCong.ForeColor = System.Drawing.Color.White;
-            this.btnPhanCong.Location = new System.Drawing.Point(43, 259);
-            this.btnPhanCong.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPhanCong.Location = new System.Drawing.Point(32, 210);
             this.btnPhanCong.Name = "btnPhanCong";
-            this.btnPhanCong.Size = new System.Drawing.Size(246, 164);
+            this.btnPhanCong.Size = new System.Drawing.Size(184, 133);
             this.btnPhanCong.TabIndex = 2;
             this.btnPhanCong.Tag = "ucPhanCong";
             this.btnPhanCong.Text = "Phân Công Dự Án";
@@ -201,10 +198,9 @@
             this.btnThanNhan.ActiveControl = null;
             this.btnThanNhan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(106)))));
             this.btnThanNhan.ForeColor = System.Drawing.Color.White;
-            this.btnThanNhan.Location = new System.Drawing.Point(315, 259);
-            this.btnThanNhan.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThanNhan.Location = new System.Drawing.Point(236, 210);
             this.btnThanNhan.Name = "btnThanNhan";
-            this.btnThanNhan.Size = new System.Drawing.Size(246, 164);
+            this.btnThanNhan.Size = new System.Drawing.Size(184, 133);
             this.btnThanNhan.TabIndex = 2;
             this.btnThanNhan.Tag = "ucThanNhan";
             this.btnThanNhan.Text = "Thân Nhân";
@@ -224,10 +220,9 @@
             this.btnDuAn.ActiveControl = null;
             this.btnDuAn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(133)))), ((int)(((byte)(238)))));
             this.btnDuAn.ForeColor = System.Drawing.Color.White;
-            this.btnDuAn.Location = new System.Drawing.Point(595, 70);
-            this.btnDuAn.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDuAn.Location = new System.Drawing.Point(446, 57);
             this.btnDuAn.Name = "btnDuAn";
-            this.btnDuAn.Size = new System.Drawing.Size(246, 164);
+            this.btnDuAn.Size = new System.Drawing.Size(184, 133);
             this.btnDuAn.TabIndex = 2;
             this.btnDuAn.Tag = "ucDuAn";
             this.btnDuAn.Text = "Dự Án";
@@ -247,10 +242,9 @@
             this.btnNhanVien.ActiveControl = null;
             this.btnNhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(141)))), ((int)(((byte)(23)))));
             this.btnNhanVien.ForeColor = System.Drawing.Color.White;
-            this.btnNhanVien.Location = new System.Drawing.Point(43, 70);
-            this.btnNhanVien.Margin = new System.Windows.Forms.Padding(4);
+            this.btnNhanVien.Location = new System.Drawing.Point(32, 57);
             this.btnNhanVien.Name = "btnNhanVien";
-            this.btnNhanVien.Size = new System.Drawing.Size(246, 164);
+            this.btnNhanVien.Size = new System.Drawing.Size(184, 133);
             this.btnNhanVien.TabIndex = 2;
             this.btnNhanVien.Tag = "ucNhanVien";
             this.btnNhanVien.Text = "Nhân Viên";
@@ -267,11 +261,12 @@
             // 
             // ucMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ucMenu";
-            this.Size = new System.Drawing.Size(1024, 711);
+            this.Size = new System.Drawing.Size(768, 578);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.metroPanel1.ResumeLayout(false);
             this.ResumeLayout(false);

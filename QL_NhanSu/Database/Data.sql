@@ -74,13 +74,13 @@ GO
 -- 1. Phòng ban
 INSERT dbo.NHANVIEN
         ( HOTEN, NGSINH, DIACHI, SDT, LUONG, MAPB , GIOITINH )
-VALUES  ( N'Nguyễn Đức Hậu', -- HOTEN - nvarchar(100)
-          '19980918', -- NGSINH - date
-          N'Hà Nội', -- DIACHI - nvarchar(100)
-          '0364086543', -- SDT - char(10)
-          1000000, -- LUONG - int
-          1,  -- MAPB - int
-		  'Nam'
+VALUES  ( N'Vũ Thị Hường', -- HOTEN - nvarchar(100)
+          '19970805', -- NGSINH - date
+          N'Nam Định', -- DIACHI - nvarchar(100)
+          '0394249888', -- SDT - char(10)
+          2000000, -- LUONG - int
+          4,  -- MAPB - int
+		  'Nữ'
           )
 		INSERT dbo.NHANVIEN
 		          ( HOTEN ,
@@ -91,13 +91,13 @@ VALUES  ( N'Nguyễn Đức Hậu', -- HOTEN - nvarchar(100)
 		            LUONG ,
 		            MAPB
 		          )
-		  VALUES  ( N'Ngô Thảo Ly' , -- HOTEN - nvarchar(100)
-		            '19980906' , -- NGSINH - date
+		  VALUES  ( N'Phạm Mai Anh' , -- HOTEN - nvarchar(100)
+		            '19981204' , -- NGSINH - date
 		            N'Hà Nội' , -- DIACHI - nvarchar(100)
 		            N'Nữ' , -- GIOITINH - nvarchar(4)
-		            '0348456324' , -- SDT - char(10)
-		            1000000 , -- LUONG - int
-		            1  -- MAPB - int
+		            '0348456335' , -- SDT - char(10)
+		            2000000 , -- LUONG - int
+		            5  -- MAPB - int
 		          )
 
 INSERT dbo.PHONGBAN
@@ -266,7 +266,7 @@ VALUES  ( 60, -- MANV - int
           1000  -- TONGTIEN - int
           )
 GO
-SELECT *FROM LAMTHEM
+
 CREATE VIEW v_LamThem 
 AS
 SELECT MaTangCa,NHANVIEN.MANV,HOTEN,SOBUOI,TONGTIEN,GhiChu,TONGTIEN/SOBUOI AS DONGIA FROM dbo.NHANVIEN,dbo.LAMTHEM WHERE dbo.NHANVIEN.MANV=dbo.LAMTHEM.MANV
@@ -324,8 +324,8 @@ END
 GO
 
 -------------------------------------------Dự Án------------------------------------------------------
-CREATE PROC USP_GetDSDA 
-AS SELECT MADA, TENDA, DIADIEM, DUAN.MAPB 
+ALTER PROC USP_GetDSDA 
+AS SELECT MADA, TENDA, DIADIEM, DUAN.MAPB, PHONGBAN.TENPB
 FROM DUAN JOIN dbo.PHONGBAN ON PHONGBAN.MAPB = DUAN.MAPB
 GO
 
@@ -345,7 +345,7 @@ END
 GO
 
 --TẠO PROC XOÁ
-CREATE PROC SP_DUAN_DELETE
+ALTER PROC SP_DUAN_DELETE
 	@MADA INT
 AS
 BEGIN
@@ -369,7 +369,7 @@ END
 GO
 
 --TẠO PROC TÌM KIẾM
-CREATE PROCEDURE SP_DUAN_SEARCH
+ALTER PROCEDURE SP_DUAN_SEARCH
 	@SEARCHVALUE NVARCHAR(50)
 AS
 BEGIN
@@ -379,19 +379,19 @@ BEGIN
 	((DA.MADA LIKE N'%' + @SEARCHVALUE + '%') 
 		OR (DA.TENDA LIKE N'%' + @SEARCHVALUE + '%') 
 		OR (DA.DIADIEM LIKE N'%' + @SEARCHVALUE + '%') 
-		OR (DA.MAPB LIKE N'%' + @SEARCHVALUE + '%'))
+		OR (DA.MAPB LIKE N'%' + @SEARCHVALUE + '%')
+		OR (PB.TENPB Like N'%' + @SEARCHVALUE + '%'))
 END
 GO
--------------PHONG BAN-----------------------------------------------
-------------------------------------------
-CREATE PROC USP_GetDSPB AS SELECT PHONGBAN.MAPB,TENPB,MATB,NGNHANCHUC,NHANVIEN.HOTEN FROM dbo.PHONGBAN JOIN dbo.NHANVIEN ON PHONGBAN.MATB = NHANVIEN.MANV
+----------------------------------------PHÒNG BAN--------------------------------
+CREATE PROC USP_GetDSPB AS SELECT PHONGBAN.MAPB,TENPB,MATB,NGNHANCHUC,NHANVIEN.HOTEN FROM dbo.PHONGBAN left JOIN dbo.NHANVIEN ON PHONGBAN.MATB  = NHANVIEN.MANV 
 GO 
 
 EXEC USP_GetDSPB
 GO
 
 ----THEM---
-CREATE PROC SP_PHONGBAN_INSERT
+CREATE PROC USP_InsertPB
 	@MAPB INT ,
 	@TENPB NVARCHAR(50),
 	@MATB INT,
@@ -409,12 +409,13 @@ GO
 
 INSERT dbo.PHONGBAN
         ( TENPB, MATB, NGNHANCHUC )
-VALUES  ( N'Phòng tài chính', -- TENPB - nvarchar(50)
+VALUES  ( N'Phòng kế toán', -- TENPB - nvarchar(50)
           3, -- MATB - int
           GETDATE()  -- NGNHANCHUC - date
           )
+
 -----XOA-----------------
-CREATE PROC SP_PHONGBAN_DELETE
+CREATE PROC USP_DeletePB
 	@MAPB INT
 AS
 BEGIN
@@ -422,8 +423,10 @@ BEGIN
 	WHERE MAPB = @MAPB
 END
 GO
+ 
+DELETE FROM dbo.PHONGBAN WHERE MAPB ='6'
 ------SỬA-----------------
-CREATE PROC SP_PHONGBAN_UPDATE
+CREATE PROC USP_UpdatePB
 	@MAPB INT ,
 	@TENPB NVARCHAR(50),
 	@MATB INT,
@@ -435,10 +438,10 @@ BEGIN
 	WHERE MAPB =@MAPB
 END
 GO
-
-UPDATE dbo.NHANVIEN SET GIOITINH = 'Nam'
+SELECT *FROM dbo.PHONGBAN
+UPDATE dbo.PHONGBAN SET MAPB = '7'
 ----------TÌM KIẾM---------------
-CREATE PROCEDURE SP_PHONGBAN_SEARCH
+CREATE PROC USP_SearchPB
 	@SEARCH NVARCHAR (50)
 AS
 BEGIN
@@ -452,7 +455,7 @@ BEGIN
 END
 GO
 -----------------GET ALL-----------
-CREATE PROCEDURE SP_PHONGBAN_GETALL
+CREATE PROC USP_GetallPB
 AS
 BEGIN
 	SELECT PB.MAPB, TENPB, MATB, NGNHANCHUC

@@ -35,7 +35,7 @@ namespace QL_NhanSu.DTO
             Int32.TryParse(row["MAPB"].ToString(), out this.mapb);
             this.tenpb = row["TENPB"].ToString();
             Int32.TryParse(row["MATB"].ToString(), out this.matb);
-            this.hoTen = row["HOTEN"].ToString();
+            this.hoTen = row["NGNHANCHUC"].ToString();
             this.ngnhanchuc = (DateTime)row["NGNHANCHUC"];
 
         }
