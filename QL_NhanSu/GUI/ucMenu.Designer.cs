@@ -73,7 +73,7 @@
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(52, 10);
+            this.metroPanel1.Location = new System.Drawing.Point(53, 10);
             this.metroPanel1.Name = "metroPanel1";
             this.metroPanel1.Size = new System.Drawing.Size(654, 557);
             this.metroPanel1.TabIndex = 0;
@@ -87,7 +87,7 @@
             this.btnHuongDan.BackColor = System.Drawing.Color.Teal;
             this.btnHuongDan.ForeColor = System.Drawing.Color.White;
             this.btnHuongDan.Location = new System.Drawing.Point(446, 366);
-            this.btnHuongDan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHuongDan.Margin = new System.Windows.Forms.Padding(2);
             this.btnHuongDan.Name = "btnHuongDan";
             this.btnHuongDan.Size = new System.Drawing.Size(184, 133);
             this.btnHuongDan.TabIndex = 6;
@@ -110,7 +110,7 @@
             this.btnTraLuong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnTraLuong.ForeColor = System.Drawing.Color.White;
             this.btnTraLuong.Location = new System.Drawing.Point(32, 366);
-            this.btnTraLuong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTraLuong.Margin = new System.Windows.Forms.Padding(2);
             this.btnTraLuong.Name = "btnTraLuong";
             this.btnTraLuong.Size = new System.Drawing.Size(388, 133);
             this.btnTraLuong.TabIndex = 4;
@@ -264,7 +264,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ucMenu";
             this.Size = new System.Drawing.Size(768, 578);
             this.tableLayoutPanel1.ResumeLayout(false);

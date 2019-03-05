@@ -38,7 +38,7 @@ namespace QL_NhanSu.DAO
             }
             return maLopList;
         }
-        public bool InsertPB(int maPB ,string tenPB , int maTB ,DateTime Ngnhanchuc)
+        public bool InsertPB(string tenPB , int maTB ,DateTime Ngnhanchuc)
         {
             int result = DataProvider.Instance.ExecuteNonQuery(" EXEC USP_InsertPB @TENPB , @MATB , @NGNHANCHUC", new object[] { tenPB , maTB , Ngnhanchuc });
 

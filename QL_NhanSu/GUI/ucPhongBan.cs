@@ -62,6 +62,12 @@ namespace QL_NhanSu.GUI
             dgvPhongBan.Columns["HOTEN"].HeaderText = "Họ Tên";
             dgvPhongBan.Columns["HoTen"].Width = 240;
         }
+        /////////////////////////////////// Handle Event Button////////////////////////// 
+        /// <summary>
+        /// Trở lại
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnBack_Click(object sender, EventArgs e)
         {
             ucMenu ucMenu = new ucMenu();
