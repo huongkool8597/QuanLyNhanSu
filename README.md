@@ -44,3 +44,42 @@ git push --set-upstream orign hieunh1801
 - 5. Tạo SP __SEARCH__ : để tìm kiếm thông tin
 
 - __===>__ TEST lại 5 procedure vừa tạo.
+
+## Hướng dẫn Merger các nhánh
+Step 1: pull code từ trên remote repository về máy
+```
+git pull
+```
+Step 2: Xem các nhánh được pull về chưa
+```
+git branch -r
+```
+Step 3: Xem trạng thái git của mình
+```
+git status
+```
+Step 3.1: Nếu có filt bị thay đổi, thêm sửa hoặc xóa => cần commit
+```
+git add . // thêm các thay đổi để commit
+git commit -m "Tên commit"
+```
+Step 4: Merger các nhánh
+Step 4.1: Về nhánh master trước khi push
+```
+git checkout master
+```
+Step 4.1: Vd: merger nhánh origin/Nambui27
+```
+git merge origin/NamBui27
+```
+Step 4.2 Bị conflic
+- Bước 1: Mở visual studio code lên và chỉnh sủa những file bị conflic
+- Bước 2: 
+```
+git add .
+git commit -m "Giải quyết conflic với nhánh Nambui27"
+```
+Sau khi hoàn thiện tất cả các bước thì push lên orign/master
+```
+push
+```
